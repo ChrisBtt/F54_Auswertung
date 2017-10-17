@@ -1,0 +1,2 @@
+ filename, dark1, dark2, lamp1, lamp2, acid1, acid2, alka1, alka2, wavebin1, wavebin2
+ FP_10_08_2017_12_53_23_HIoverI_Wavebin0264to0368.txt,    825,    834,      0,     16,    667,    690,    796,    820,    264,    368
