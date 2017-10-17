@@ -61,17 +61,21 @@ In diesem Versuch sollen die Messdaten vorrangig mit dem einfachen Boxmodell aus
 
 \section{Theorie}
 
-\subsection*{k-Wert}
+\subsection{k-Wert}
 \subsection{Messmethoden}
 \subsection{title}
 
 \subsection{Boxmodell}
-Erwähnt werden soll jedoch noch das Boxmodell, welches für die Berechnungen von entscheidender Bedeutung ist. Hierbei wird der Luft- und Wasserraum als jeweils eine separate Box betrachtet. Diese sind durch Parameter, wie die Konzentration des Gases beschrieben. Unter geeigneten Annahmen, welche teilweise in den Ergebnissen genauer betrachtet werden, ergibt sich bei einer Evasion, also dem Übergang von $CO_2$ aus dem Wasser in die Luft, ein Verhalten der Konzentration von $CO_2$ im Wasser, welches sich durch folgende Formel zeitlich beschreiben lässt:
+Für die quantitative Auswertung der Messdaten wird im Folgenden das Boxmodell verwendet. Die für dieses Modell vereinfachend getroffenen Annahmen dürfen gemacht werden, da die betrachteten Effekte trotzdem größtenteils richtig beschrieben werden, da  Hierbei wird der Luft- und Wasserraum als jeweils eine separate Box betrachtet. Diese sind durch Parameter, wie die Konzentration des Gases beschrieben, die sich innerhalb der ganzen Box (also über das gesamten betrachtete Volumen) nicht ändern. 
+Auch die Flussrichtung wird in diesem Experiment weitgehend durch äußere Einstellungen, etwa der Gaskonzentration festgelegt, wodurch sich die Differentialgleichung weiter vereinfacht zu
+\begin{equation}
+	\dot{c_w} = - \frac{k}{h_{eff}} \cdot c_w
+\end{equation}
+Unter den gemachten Annahmen, ergibt sich bei einer Evasion, also dem Übergang von $CO_2$ aus dem Wasser in die Luft, ein Verhalten der Konzentration von $CO_2$ im Wasser, welches sich durch folgende Formel zeitlich beschreiben lässt:
 
 \begin{equation}
 c_w(t) = c_w(0) \, exp\Big(- \frac{k}{h_{eff}}t\Big)
 \end{equation}
-Auch auf diese wird in den Ergebnissen noch genauer eingegangen.
 
 
 
@@ -552,7 +556,7 @@ Bei Betrachtung der Temperaturen bietet es sich an, neben den Messungen in beide
 Der Anstieg der Lufttemperatur wird hauptsächlich durch die Abwärme des Ventilatormotors hervorgerufen, was in der kleinen Luftkammer bereits einen nicht unerheblicher Einfluss darstellt.
 Die Graphen der Wassertemperatur zeigen einen stufenartigen Anstieg, der durch die ungenaue Datenaufzeichnung der Messwerte zu erklären ist. Dadurch sind zwar feine Schwankungen der Wassertemperatur nicht zu sehen, aber der allgemeine Trend ist klar ersichtlich. Zu erklären ist dieses Wachstum mit dem aus der Hausleitung stammenden VE-Wasser. Es ist generell kühler als die Raumtemperatur und steht bei der Evasionsmessung im Kanal, wo es ins thermische Gleichgewicht mit der Lufttemperatur gelangen will, sprich sich erwärmt.
 
-Die gemessene Wasserhöhe schwankt am meisten in beiden Versuchsteilen (Abbildungen 6 & 21), was auch durchaus so gewollt ist. Durch den eingestellten Wind werden innerhalb des Kanals Wellen erzeugt, die die Wassersäule teilweise massiv beeinflussen. Es wurden Wellen von etwa einem Zentimeter Höhe beobachtet, das entspricht bei einer Fülllhöhe von etwa sieben Zentimetern im Kanal bereits 15\%. Der überwiegende Abfall der Füllhöhe ist eigentlich unerwünscht und durch eine undichte Stelle im Versuchsaufbau zu begründen. Es entwich über den ganzen Messungszeitraum Flüssigkeit aus dem Kanal, was nicht wieder hinzugegeben wurde.
+Die gemessene Wasserhöhe schwankt am meisten in beiden Versuchsteilen (Abbildungen 6 \& 21), was auch durchaus so gewollt ist. Durch den eingestellten Wind werden innerhalb des Kanals Wellen erzeugt, die die Wassersäule teilweise massiv beeinflussen. Es wurden Wellen von etwa einem Zentimeter Höhe beobachtet, das entspricht bei einer Fülllhöhe von etwa sieben Zentimetern im Kanal bereits 15\%. Der überwiegende Abfall der Füllhöhe ist eigentlich unerwünscht und durch eine undichte Stelle im Versuchsaufbau zu begründen. Es entwich über den ganzen Messungszeitraum Flüssigkeit aus dem Kanal, was nicht wieder hinzugegeben wurde.
 
 Der Partialdruck von $CO_2$ im Wasser ist in den Abbildungen 5 \& 20 zu sehen. Er hängt direkt mit den am Experiment durchgeführten Eingriffen zusammen, die durch die horizontalen Balken eingezeichnet sind. So ist etwa der größte Anstieg gefolgt von dem exponentiellen Abfall die verzögerte Reaktion auf die Begasung des Wassers mit sofortiger Evasion des $CO_2$ in die Luft. Der Abfall ist dann so zu erklären, dass durch die sinkende Gaskonzentration im Wasser auch der abzugebende Teil an $CO_2$ an die Luft kleiner wird. Dadurch senkt sich der Partialdruck des Gases insgesamt.
 Der kleinere Hochpunkt zu Beginn beider Messreihen ist mit \cite{jaehne} Abb. 8

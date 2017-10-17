@@ -2,33 +2,34 @@
 \vspace {\baselineskip }
 \contentsline {section}{\numberline {1}Einleitung}{4}
 \contentsline {section}{\numberline {2}Theorie}{4}
-\contentsline {subsection}{\numberline {2.1}Messmethoden}{4}
-\contentsline {subsection}{\numberline {2.2}title}{4}
-\contentsline {subsection}{\numberline {2.3}Boxmodell}{4}
+\contentsline {subsection}{\numberline {2.1}k-Wert}{4}
+\contentsline {subsection}{\numberline {2.2}Messmethoden}{4}
+\contentsline {subsection}{\numberline {2.3}title}{4}
+\contentsline {subsection}{\numberline {2.4}Boxmodell}{4}
 \contentsline {section}{\numberline {3}Versuchsanordnung}{5}
 \contentsline {section}{\numberline {4}Versuchsdurchf\"uhrung}{5}
-\contentsline {section}{\numberline {5}Auswertung/Ergebnisse}{6}
-\contentsline {subsection}{\numberline {5.1}VE-Wasser}{6}
-\contentsline {subsubsection}{\numberline {5.1.1}Zeitliche Verl\"aufe der Messdaten}{6}
-\contentsline {subsubsection}{\numberline {5.1.2}Berechnung $CO_2$-Konzentration in Wasser nach Begasung}{7}
-\contentsline {subsubsection}{\numberline {5.1.3}Untersuchung Boxmodell-Bedingung}{7}
-\contentsline {paragraph}{Leitf\IeC {\"a}higkeitsmethode\\}{8}
-\contentsline {paragraph}{Indikatormethode\\}{8}
-\contentsline {subsubsection}{\numberline {5.1.4}Bestimmung Transfergeschwindigkeit}{9}
-\contentsline {paragraph}{Durchg\IeC {\"a}ngiger Fit}{10}
-\contentsline {paragraph}{Schrittweiser Fit: Teil 1}{10}
-\contentsline {paragraph}{Schrittweiser Fit: Teil 2}{11}
-\contentsline {subsubsection}{\numberline {5.1.5}Plot der Spektren}{11}
-\contentsline {subsubsection}{\numberline {5.1.6}Bestimmung Transfergeschwindigkeit - ${\begingroup [HI]\endgroup \over [I^-]}$ Methode}{12}
-\contentsline {paragraph}{Teil 1}{12}
-\contentsline {paragraph}{Teil 2}{13}
-\contentsline {subsection}{\numberline {5.2}Meermodellwasser}{14}
-\contentsline {subsubsection}{\numberline {5.2.1}Zeitliche Verl\"aufe der Messdaten}{14}
-\contentsline {subsubsection}{\numberline {5.2.2}Berechnung $CO_2$-Konzentration in Wasser nach Begasung}{15}
-\contentsline {subsubsection}{\numberline {5.2.3}Untersuchung Boxmodell-Bedingung}{15}
-\contentsline {paragraph}{Indikatormethode\\}{16}
-\contentsline {subsubsection}{\numberline {5.2.4}Plot der Spektren}{16}
-\contentsline {subsubsection}{\numberline {5.2.5}Bestimmung Transfergeschwindigkeit - ${\begingroup [HI]\endgroup \over [I^-]}$ Methode}{17}
-\contentsline {paragraph}{Teil 1}{18}
-\contentsline {paragraph}{Teil 2}{18}
-\contentsline {section}{\numberline {6}Diskussion}{18}
+\contentsline {section}{\numberline {5}Auswertung/Ergebnisse}{7}
+\contentsline {subsection}{\numberline {5.1}VE-Wasser}{7}
+\contentsline {subsubsection}{\numberline {5.1.1}Zeitliche Verl\"aufe der Messdaten}{7}
+\contentsline {subsubsection}{\numberline {5.1.2}Berechnung $CO_2$-Konzentration in Wasser nach Begasung}{8}
+\contentsline {subsubsection}{\numberline {5.1.3}Untersuchung Boxmodell-Bedingung}{8}
+\contentsline {paragraph}{Leitf\IeC {\"a}higkeitsmethode\\}{9}
+\contentsline {paragraph}{Indikatormethode\\}{9}
+\contentsline {subsubsection}{\numberline {5.1.4}Bestimmung Transfergeschwindigkeit}{10}
+\contentsline {paragraph}{Durchg\IeC {\"a}ngiger Fit}{11}
+\contentsline {paragraph}{Schrittweiser Fit: Teil 1}{11}
+\contentsline {paragraph}{Schrittweiser Fit: Teil 2}{12}
+\contentsline {subsubsection}{\numberline {5.1.5}Plot der Spektren}{12}
+\contentsline {subsubsection}{\numberline {5.1.6}Bestimmung Transfergeschwindigkeit - ${\begingroup [HI]\endgroup \over [I^-]}$ Methode}{13}
+\contentsline {paragraph}{Teil 1}{13}
+\contentsline {paragraph}{Teil 2}{14}
+\contentsline {subsection}{\numberline {5.2}Meermodellwasser}{15}
+\contentsline {subsubsection}{\numberline {5.2.1}Zeitliche Verl\"aufe der Messdaten}{15}
+\contentsline {subsubsection}{\numberline {5.2.2}Berechnung $CO_2$-Konzentration in Wasser nach Begasung}{16}
+\contentsline {subsubsection}{\numberline {5.2.3}Untersuchung Boxmodell-Bedingung}{16}
+\contentsline {paragraph}{Indikatormethode\\}{17}
+\contentsline {subsubsection}{\numberline {5.2.4}Plot der Spektren}{17}
+\contentsline {subsubsection}{\numberline {5.2.5}Bestimmung Transfergeschwindigkeit - ${\begingroup [HI]\endgroup \over [I^-]}$ Methode}{18}
+\contentsline {paragraph}{Teil 1}{19}
+\contentsline {paragraph}{Teil 2}{19}
+\contentsline {section}{\numberline {6}Diskussion}{19}
