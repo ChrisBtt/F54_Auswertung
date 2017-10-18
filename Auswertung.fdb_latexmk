@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1508240079 "/Users/Chris/Desktop/Studium/FP/F54/Auswertung.tex" "/Users/Chris/Desktop/Studium/FP/F54/Auswertung.pdf" "Auswertung" 1508240136
-  "/Users/Chris/Desktop/Studium/FP/F54/Auswertung.aux" 1508240080 7225 5a66fa021ce2181a4664f1f9da55d481 ""
-  "/Users/Chris/Desktop/Studium/FP/F54/Auswertung.tex" 1508240077 49908 669da3f4f96aedd21f361441b1d5da80 ""
+["pdflatex"] 1508321623 "/Users/Chris/Desktop/Studium/FP/F54/Auswertung.tex" "/Users/Chris/Desktop/Studium/FP/F54/Auswertung.pdf" "Auswertung" 1508321624
+  "/Users/Chris/Desktop/Studium/FP/F54/Auswertung.aux" 1508321624 7346 69208c660f8dd2625441082d56106fb3 ""
+  "/Users/Chris/Desktop/Studium/FP/F54/Auswertung.tex" 1508321622 51386 1028ed2bd30f5b49f6691d2dcf581d4b ""
   "/usr/local/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1136768653 1528 abec98dbc43e172678c11b3b9031252a ""
@@ -68,9 +68,9 @@
   "/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1489053881 1888048 f2c5faed5981a516f406b2ccc20bff71 ""
   "/usr/local/texlive/2016/texmf-var/web2c/pdftex/pdflatex.fmt" 1489053910 3873396 e799f3cc37d8ccb4d2d8f3a85ba0c80e ""
   "/usr/local/texlive/2016/texmf.cnf" 1463979140 577 2938757e76f31531e65cc647e3507693 ""
-  "Auswertung.aux" 1508240080 7225 5a66fa021ce2181a4664f1f9da55d481 ""
-  "Auswertung.tex" 1508240077 49908 669da3f4f96aedd21f361441b1d5da80 ""
-  "Auswertung.toc" 1508240080 2343 d1a0622a3746654477610b3a3cf2cf17 ""
+  "Auswertung.aux" 1508321624 7346 69208c660f8dd2625441082d56106fb3 ""
+  "Auswertung.tex" 1508321622 51386 1028ed2bd30f5b49f6691d2dcf581d4b ""
+  "Auswertung.toc" 1508321624 2428 d9220ee1cfd1d96dd516558c272d30c1 ""
   "Meerwasser/Indikator.pdf" 1502459690 28439 5b3a570faf7a6ce88222139882581065 ""
   "Meerwasser/Leitfaehigkeit.pdf" 1502398767 22000 6a96afd26baccd9392831973c7cd7cfc ""
   "Meerwasser/Luftdruck.pdf" 1502440442 19374 d2af82d64adfd86a32c6fe384a94fa78 ""
@@ -96,9 +96,9 @@
   "VE-Wasser/Windgeschwindigkeit.pdf" 1502440260 24447 d52b523f6a85a5c6f0eb17919049322e ""
   "Versuchsaufbau.png" 1502550590 1646995 5258b14d60203e2801e685054cc294be ""
   (generated)
-  "Auswertung.pdf"
-  "Auswertung.aux"
-  "Auswertung.log"
-  "/Users/Chris/Desktop/Studium/FP/F54/Auswertung.pdf"
-  "Auswertung.toc"
   "/Users/Chris/Desktop/Studium/FP/F54/Auswertung.log"
+  "Auswertung.pdf"
+  "/Users/Chris/Desktop/Studium/FP/F54/Auswertung.pdf"
+  "Auswertung.log"
+  "Auswertung.aux"
+  "Auswertung.toc"

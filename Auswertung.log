@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.9)  17 OCT 2017 13:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.9)  18 OCT 2017 12:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -173,48 +173,48 @@ sers/Chris/Desktop/Studium/FP/F54/Auswertung.toc)
 
 [3] (/usr/local/texlive/2016/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
-) [4] <Versuchsaufbau.png, id=26, 610.28pt x 687.56876pt>
+) [4] <Versuchsaufbau.png, id=27, 610.28pt x 687.56876pt>
 File: Versuchsaufbau.png Graphic file (type png)
 <use Versuchsaufbau.png>
-Package pdftex.def Info: Versuchsaufbau.png used on input line 93.
+Package pdftex.def Info: Versuchsaufbau.png used on input line 103.
 (pdftex.def)             Requested size: 199.16928pt x 224.39093pt.
 [5 </Users/Chris/Desktop/Studium/FP/F54/Versuchsaufbau.png>] <VE-Wasser/Leitfae
 higkeit.pdf, id=33, 462.52798pt x 346.89601pt>
 File: VE-Wasser/Leitfaehigkeit.pdf Graphic file (type pdf)
 <use VE-Wasser/Leitfaehigkeit.pdf>
-Package pdftex.def Info: VE-Wasser/Leitfaehigkeit.pdf used on input line 116.
+Package pdftex.def Info: VE-Wasser/Leitfaehigkeit.pdf used on input line 126.
 (pdftex.def)             Requested size: 234.73523pt x 176.05182pt.
 <VE-Wasser/Luftdruck.pdf, id=34, 462.52798pt x 346.89601pt>
 File: VE-Wasser/Luftdruck.pdf Graphic file (type pdf)
 <use VE-Wasser/Luftdruck.pdf>
-Package pdftex.def Info: VE-Wasser/Luftdruck.pdf used on input line 122.
+Package pdftex.def Info: VE-Wasser/Luftdruck.pdf used on input line 132.
 (pdftex.def)             Requested size: 234.73523pt x 176.05182pt.
 <VE-Wasser/Lufttemperatur.pdf, id=35, 462.52798pt x 346.89601pt>
 File: VE-Wasser/Lufttemperatur.pdf Graphic file (type pdf)
 <use VE-Wasser/Lufttemperatur.pdf>
-Package pdftex.def Info: VE-Wasser/Lufttemperatur.pdf used on input line 129.
+Package pdftex.def Info: VE-Wasser/Lufttemperatur.pdf used on input line 139.
 (pdftex.def)             Requested size: 234.73523pt x 176.05182pt.
 <VE-Wasser/Partialdruck.pdf, id=36, 462.52798pt x 346.89601pt>
 File: VE-Wasser/Partialdruck.pdf Graphic file (type pdf)
 <use VE-Wasser/Partialdruck.pdf>
-Package pdftex.def Info: VE-Wasser/Partialdruck.pdf used on input line 135.
+Package pdftex.def Info: VE-Wasser/Partialdruck.pdf used on input line 145.
 (pdftex.def)             Requested size: 234.73523pt x 176.05182pt.
 <VE-Wasser/Wasserhoehe.pdf, id=37, 462.52798pt x 346.89601pt>
 File: VE-Wasser/Wasserhoehe.pdf Graphic file (type pdf)
 <use VE-Wasser/Wasserhoehe.pdf>
-Package pdftex.def Info: VE-Wasser/Wasserhoehe.pdf used on input line 142.
+Package pdftex.def Info: VE-Wasser/Wasserhoehe.pdf used on input line 152.
 (pdftex.def)             Requested size: 234.73523pt x 176.05182pt.
 <VE-Wasser/Wassertemperatur.pdf, id=38, 462.52798pt x 346.89601pt>
 File: VE-Wasser/Wassertemperatur.pdf Graphic file (type pdf)
 <use VE-Wasser/Wassertemperatur.pdf>
-Package pdftex.def Info: VE-Wasser/Wassertemperatur.pdf used on input line 148.
+Package pdftex.def Info: VE-Wasser/Wassertemperatur.pdf used on input line 158.
 
 (pdftex.def)             Requested size: 234.73523pt x 176.05182pt.
 <VE-Wasser/Windgeschwindigkeit.pdf, id=39, 462.52798pt x 346.89601pt>
 File: VE-Wasser/Windgeschwindigkeit.pdf Graphic file (type pdf)
 <use VE-Wasser/Windgeschwindigkeit.pdf>
 Package pdftex.def Info: VE-Wasser/Windgeschwindigkeit.pdf used on input line 1
-57.
+67.
 (pdftex.def)             Requested size: 234.73523pt x 176.05182pt.
 [6] [7 </Users/Chris/Desktop/Studium/FP/F54/VE-Wasser/Leitfaehigkeit.pdf> </Use
 rs/Chris/Desktop/Studium/FP/F54/VE-Wasser/Luftdruck.pdf
@@ -244,15 +244,15 @@ ssertemperatur.pdf): PDF inclusion: multiple pdfs with page group included in a
  single page
 >]
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 186.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 196.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
 
  []
 
@@ -261,40 +261,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 196--197
 File: VE-Wasser/LeitfaehigkeitQuadrat.pdf Graphic file (type pdf)
 <use VE-Wasser/LeitfaehigkeitQuadrat.pdf>
 Package pdftex.def Info: VE-Wasser/LeitfaehigkeitQuadrat.pdf used on input line
- 208.
+ 218.
 (pdftex.def)             Requested size: 341.43306pt x 256.085pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--214
+Underfull \hbox (badness 10000) in paragraph at lines 222--224
 
  []
 
 
-Overfull \hbox (21.65495pt too wide) in paragraph at lines 237--237
+Overfull \hbox (21.65495pt too wide) in paragraph at lines 247--247
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--237
+Underfull \hbox (badness 10000) in paragraph at lines 247--247
 []\OT1/cmr/m/n/12 Abbildung 10: Ta-bel-le der
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--237
+Underfull \hbox (badness 10000) in paragraph at lines 247--247
 \OT1/cmr/m/n/12 ver-schie-de-nen $[]$ und m
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--237
+Underfull \hbox (badness 10000) in paragraph at lines 247--247
 \OT1/cmr/m/n/12 f[]ur un-ter-schied-li-che Wel-
  []
 
 <VE-Wasser/Indikator.pdf, id=427, 462.52798pt x 346.89601pt>
 File: VE-Wasser/Indikator.pdf Graphic file (type pdf)
 <use VE-Wasser/Indikator.pdf>
-Package pdftex.def Info: VE-Wasser/Indikator.pdf used on input line 243.
+Package pdftex.def Info: VE-Wasser/Indikator.pdf used on input line 253.
 (pdftex.def)             Requested size: 270.30118pt x 202.73485pt.
 [9 </Users/Chris/Desktop/Studium/FP/F54/VE-Wasser/LeitfaehigkeitQuadrat.pdf>]
-Overfull \hbox (18.48686pt too wide) in paragraph at lines 246--248
+Overfull \hbox (18.48686pt too wide) in paragraph at lines 256--258
 []\OT1/cmr/m/n/12 Grunds[]atzlich lie-fert die-se Me-tho-de die sel-ben Er-geb-
 nis-se, wie be-reits die Leitf[]ahigkeitsmethode.
  []
@@ -303,21 +303,21 @@ nis-se, wie be-reits die Leitf[]ahigkeitsmethode.
 ransferGeschw.pdf, id=521, 462.52798pt x 346.89601pt>
 File: VE-Wasser/TransferGeschw.pdf Graphic file (type pdf)
 <use VE-Wasser/TransferGeschw.pdf>
-Package pdftex.def Info: VE-Wasser/TransferGeschw.pdf used on input line 268.
+Package pdftex.def Info: VE-Wasser/TransferGeschw.pdf used on input line 278.
 (pdftex.def)             Requested size: 234.73523pt x 176.05182pt.
 <VE-Wasser/TransferGeschwKnick.pdf, id=522, 462.52798pt x 346.89601pt>
 File: VE-Wasser/TransferGeschwKnick.pdf Graphic file (type pdf)
 <use VE-Wasser/TransferGeschwKnick.pdf>
 Package pdftex.def Info: VE-Wasser/TransferGeschwKnick.pdf used on input line 2
-74.
+84.
 (pdftex.def)             Requested size: 234.73523pt x 176.05182pt.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 303.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 313.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 303.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 313.
 [11 </Users/Chris/Desktop/Studium/FP/F54/VE-Wasser/TransferGeschw.pdf> </Users/
 Chris/Desktop/Studium/FP/F54/VE-Wasser/TransferGeschwKnick.pdf
 
@@ -327,52 +327,52 @@ n a single page
 >] <VE-Wasser/Referenzspektren.pdf, id=601, 462.52798pt x 346.89601pt>
 File: VE-Wasser/Referenzspektren.pdf Graphic file (type pdf)
 <use VE-Wasser/Referenzspektren.pdf>
-Package pdftex.def Info: VE-Wasser/Referenzspektren.pdf used on input line 323.
+Package pdftex.def Info: VE-Wasser/Referenzspektren.pdf used on input line 333.
 
 (pdftex.def)             Requested size: 341.43306pt x 256.085pt.
 <VE-Wasser/TransferhIKnick.pdf, id=602, 462.52798pt x 346.89601pt>
 File: VE-Wasser/TransferhIKnick.pdf Graphic file (type pdf)
 <use VE-Wasser/TransferhIKnick.pdf>
-Package pdftex.def Info: VE-Wasser/TransferhIKnick.pdf used on input line 330.
+Package pdftex.def Info: VE-Wasser/TransferhIKnick.pdf used on input line 340.
 (pdftex.def)             Requested size: 341.43306pt x 256.085pt.
 [12 </Users/Chris/Desktop/Studium/FP/F54/VE-Wasser/Referenzspektren.pdf>] [13 <
 /Users/Chris/Desktop/Studium/FP/F54/VE-Wasser/TransferhIKnick.pdf>] <Meerwasser
 /Leitfaehigkeit.pdf, id=701, 462.52798pt x 346.89601pt>
 File: Meerwasser/Leitfaehigkeit.pdf Graphic file (type pdf)
 <use Meerwasser/Leitfaehigkeit.pdf>
-Package pdftex.def Info: Meerwasser/Leitfaehigkeit.pdf used on input line 377.
+Package pdftex.def Info: Meerwasser/Leitfaehigkeit.pdf used on input line 387.
 (pdftex.def)             Requested size: 234.73523pt x 176.05182pt.
 <Meerwasser/Luftdruck.pdf, id=702, 462.52798pt x 346.89601pt>
 File: Meerwasser/Luftdruck.pdf Graphic file (type pdf)
 <use Meerwasser/Luftdruck.pdf>
-Package pdftex.def Info: Meerwasser/Luftdruck.pdf used on input line 383.
+Package pdftex.def Info: Meerwasser/Luftdruck.pdf used on input line 393.
 (pdftex.def)             Requested size: 234.73523pt x 176.05182pt.
 <Meerwasser/Lufttemperatur.pdf, id=703, 462.52798pt x 346.89601pt>
 File: Meerwasser/Lufttemperatur.pdf Graphic file (type pdf)
 <use Meerwasser/Lufttemperatur.pdf>
-Package pdftex.def Info: Meerwasser/Lufttemperatur.pdf used on input line 390.
+Package pdftex.def Info: Meerwasser/Lufttemperatur.pdf used on input line 400.
 (pdftex.def)             Requested size: 234.73523pt x 176.05182pt.
 <Meerwasser/Partialdruck.pdf, id=704, 462.52798pt x 346.89601pt>
 File: Meerwasser/Partialdruck.pdf Graphic file (type pdf)
 <use Meerwasser/Partialdruck.pdf>
-Package pdftex.def Info: Meerwasser/Partialdruck.pdf used on input line 396.
+Package pdftex.def Info: Meerwasser/Partialdruck.pdf used on input line 406.
 (pdftex.def)             Requested size: 234.73523pt x 176.05182pt.
 <Meerwasser/Wasserhoehe.pdf, id=705, 462.52798pt x 346.89601pt>
 File: Meerwasser/Wasserhoehe.pdf Graphic file (type pdf)
 <use Meerwasser/Wasserhoehe.pdf>
-Package pdftex.def Info: Meerwasser/Wasserhoehe.pdf used on input line 403.
+Package pdftex.def Info: Meerwasser/Wasserhoehe.pdf used on input line 413.
 (pdftex.def)             Requested size: 234.73523pt x 176.05182pt.
 <Meerwasser/Wassertemperatur.pdf, id=706, 462.52798pt x 346.89601pt>
 File: Meerwasser/Wassertemperatur.pdf Graphic file (type pdf)
 <use Meerwasser/Wassertemperatur.pdf>
-Package pdftex.def Info: Meerwasser/Wassertemperatur.pdf used on input line 409
+Package pdftex.def Info: Meerwasser/Wassertemperatur.pdf used on input line 419
 .
 (pdftex.def)             Requested size: 234.73523pt x 176.05182pt.
 <Meerwasser/Windgeschwindigkeit.pdf, id=707, 462.52798pt x 346.89601pt>
 File: Meerwasser/Windgeschwindigkeit.pdf Graphic file (type pdf)
 <use Meerwasser/Windgeschwindigkeit.pdf>
 Package pdftex.def Info: Meerwasser/Windgeschwindigkeit.pdf used on input line 
-418.
+428.
 (pdftex.def)             Requested size: 234.73523pt x 176.05182pt.
 [14] [15 </Users/Chris/Desktop/Studium/FP/F54/Meerwasser/Leitfaehigkeit.pdf> </
 Users/Chris/Desktop/Studium/FP/F54/Meerwasser/Luftdruck.pdf
@@ -402,59 +402,59 @@ assertemperatur.pdf): PDF inclusion: multiple pdfs with page group included in
 a single page
 >]
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 451.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 461.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 461--462
+Underfull \hbox (badness 10000) in paragraph at lines 471--472
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 461--462
+Underfull \hbox (badness 10000) in paragraph at lines 471--472
 
  []
 
 [16 </Users/Chris/Desktop/Studium/FP/F54/Meerwasser/Windgeschwindigkeit.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 468--470
+Underfull \hbox (badness 10000) in paragraph at lines 478--480
 
  []
 
 
-Overfull \hbox (25.41878pt too wide) in paragraph at lines 485--485
+Overfull \hbox (25.41878pt too wide) in paragraph at lines 495--495
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 485--485
+Underfull \hbox (badness 10000) in paragraph at lines 495--495
 []\OT1/cmr/m/n/12 Abbildung 24: Ta-bel-le der
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 485--485
+Underfull \hbox (badness 10000) in paragraph at lines 495--495
 \OT1/cmr/m/n/12 ver-schie-de-nen $[]$ und m
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 485--485
+Underfull \hbox (badness 10000) in paragraph at lines 495--495
 \OT1/cmr/m/n/12 f[]ur un-ter-schied-li-che Wel-
  []
 
 <Meerwasser/Indikator.pdf, id=1099, 462.52798pt x 346.89601pt>
 File: Meerwasser/Indikator.pdf Graphic file (type pdf)
 <use Meerwasser/Indikator.pdf>
-Package pdftex.def Info: Meerwasser/Indikator.pdf used on input line 491.
+Package pdftex.def Info: Meerwasser/Indikator.pdf used on input line 501.
 (pdftex.def)             Requested size: 270.30118pt x 202.73485pt.
 <Meerwasser/Referenzspektren.pdf, id=1100, 462.52798pt x 346.89601pt>
 File: Meerwasser/Referenzspektren.pdf Graphic file (type pdf)
 <use Meerwasser/Referenzspektren.pdf>
-Package pdftex.def Info: Meerwasser/Referenzspektren.pdf used on input line 503
+Package pdftex.def Info: Meerwasser/Referenzspektren.pdf used on input line 513
 .
 (pdftex.def)             Requested size: 341.43306pt x 256.085pt.
 [17 </Users/Chris/Desktop/Studium/FP/F54/Meerwasser/Indikator.pdf>] <Meerwasser
 /TransferhIKnick.pdf, id=1146, 462.52798pt x 346.89601pt>
 File: Meerwasser/TransferhIKnick.pdf Graphic file (type pdf)
 <use Meerwasser/TransferhIKnick.pdf>
-Package pdftex.def Info: Meerwasser/TransferhIKnick.pdf used on input line 510.
+Package pdftex.def Info: Meerwasser/TransferhIKnick.pdf used on input line 520.
 
 (pdftex.def)             Requested size: 341.43306pt x 256.085pt.
 [18 </Users/Chris/Desktop/Studium/FP/F54/Meerwasser/Referenzspektren.pdf> </Use
@@ -468,7 +468,7 @@ ertung.aux) )
 Here is how much of TeX's memory you used:
  2907 strings out of 493014
  42925 string characters out of 6133352
- 113979 words of memory out of 5000000
+ 114979 words of memory out of 5000000
  6397 multiletter control sequences out of 15000+600000
  9425 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -489,7 +489,7 @@ l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
 /texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
 Output written on /Users/Chris/Desktop/Studium/FP/F54/Auswertung.pdf (25 pages,
- 2496881 bytes).
+ 2498893 bytes).
 PDF statistics:
  1311 PDF objects out of 1440 (max. 8388607)
  321 compressed objects within 4 object streams

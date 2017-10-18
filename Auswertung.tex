@@ -60,13 +60,6 @@ Da auch der Einfluss der Zusammensetzung des Wassers verstanden werden soll, wer
 In diesem Versuch sollen die Messdaten vorrangig mit dem einfachen Boxmodell ausgewertet und verglichen werden. Dort werden die zwei Fluide als jeweils ein Rechteck dargestellt und dadurch ist es möglich das ganze System durch eine einfach Exponentialgleichung zu beschreiben. Die detailierte Erklärung des Modells folgt im Theorieteil.
 
 \section{Theorie}
-
-\subsection{Transfergeschwindigkeit}
-
-
-\subsection{Messmethoden}
-\subsection{title}
-
 \subsection{Boxmodell}
 Für die quantitative Auswertung der Messdaten wird im Folgenden das Boxmodell verwendet. Dafür kann eine gekoppelte Differentialgleichung aufgestellt werden. Generell wird der Luft- und Wasserraum als jeweils eine separate Box betrachtet. Diese sind durch Parameter, wie die Konzentration des Gases beschrieben, die sich innerhalb der ganzen Box (also über das gesamten betrachtete Volumen) nicht ändern.
 Die für dieses Modell vereinfachend getroffenen Annahmen dürfen gemacht werden, da die betrachteten Effekte trotzdem größtenteils richtig beschrieben werden, was sich später anhand unserer Ergebnisse zeigen lässt.  
@@ -78,6 +71,23 @@ Unter den gemachten Annahmen, ergibt sich bei einer Evasion, also dem Übergang 
 \begin{equation}
 c_w(t) = c_w(0) \, exp\Big(- \frac{k}{h_{eff}}t\Big)
 \end{equation}
+
+\subsection{Transfergeschwindigkeit}
+Ein wichtiger Parameter zur quantitativen Bewertung des Gasaustauschs ist die Transfergeschwindigkeit $k$. Sie wird üblicherweise in der Einheit $\frac{cm}{h}$ angegeben.
+Diese Geschwindigkeit hängt vor allem von der Konzentrationsdifferenz $\Delta c$ des zu messenden Gases in beiden Fluiden an der Grenzschicht ab. Der Zusammenhang wird durch folgende Gleichung beschrieben: 
+\begin{equation}
+	k = \frac{j}{\Delta c} = \frac{j}{\alpha c_w - c_l{den}}
+\end{equation}
+Dabei ist $j$ der Netto-Fluss des Gases.
+Bei der Konzentration muss dabei beachtet werden, dass nicht alles abgegebene Gas des einen Fluids auch direkt von dem anderen aufgenommen werden kann. Hier ist als Messgröße die Löslichkeit $\alpha$ zu betrachten, die an die Wasserkonzentration $c_w$ multipliziert wird. Sie gibt Aufschluss über die tatsächliche Konzentration im Gas. Für diese Konstante gibt es Tabellen, in denen der passende Wert für die jeweiligen Versuchsbedingungen herausgesucht werden kann (etwa \cite{jaehne}, Abb. 4). Gemessen wurde dieser im thermodynamischen Gleichgewicht  zwischen Luft und Wasser.
+Im betrachteten Boxmodell kann vereinfachend angenommen werden, dass die Gaskonzentration an allen Stellen eines Mediums gleich ist und somit auch die Transfergeschwindigkeit nicht lokal variiert werden muss.
+Diese Näherung wird auch durch den Versuchsaufbau begünstigt, indem etwa immer neue $CO_2$-arme Luft eingespült wird.
+
+\subsection{Messmethode: Indikator}
+
+\subsection{Messmethode: Spektrometrie}
+\subsection{title}
+
 
 
 
