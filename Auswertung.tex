@@ -1,4 +1,5 @@
 \documentclass[12pt]{article}
+\usepackage{amsmath}
 \usepackage{graphicx}         % fuer das Einbinden von Grafiken
 \usepackage{float}    % für Grafiken, um [H] zu verwenden
 \usepackage[ngerman]{babel}   % weglassen, wenn in Englisch
@@ -59,33 +60,47 @@ Da auch der Einfluss der Zusammensetzung des Wassers verstanden werden soll, wer
 
 In diesem Versuch sollen die Messdaten vorrangig mit dem einfachen Boxmodell ausgewertet und verglichen werden. Dort werden die zwei Fluide als jeweils ein Rechteck dargestellt und dadurch ist es möglich das ganze System durch eine einfach Exponentialgleichung zu beschreiben. Die detailierte Erklärung des Modells folgt im Theorieteil.
 
-\section{Theorie}
+\section{Theorie}\label{1}
 \subsection{Boxmodell}
 Für die quantitative Auswertung der Messdaten wird im Folgenden das Boxmodell verwendet. Dafür kann eine gekoppelte Differentialgleichung aufgestellt werden. Generell wird der Luft- und Wasserraum als jeweils eine separate Box betrachtet. Diese sind durch Parameter, wie die Konzentration des Gases beschrieben, die sich innerhalb der ganzen Box (also über das gesamten betrachtete Volumen) nicht ändern.
 Die für dieses Modell vereinfachend getroffenen Annahmen dürfen gemacht werden, da die betrachteten Effekte trotzdem größtenteils richtig beschrieben werden, was sich später anhand unserer Ergebnisse zeigen lässt.  
-Auch die Flussrichtung wird in diesem Experiment weitgehend durch äußere Einstellungen, etwa der Gaskonzentration festgelegt, wodurch sich die Differentialgleichung weiter vereinfacht zu
+Auch die Flussrichtung wird in diesem Experiment weitgehend durch äußere Einstellungen, etwa der Gaskonzentration, festgelegt.
+Besonders gilt hier die Annahme 
+\begin{equation}\label{Luftkonzentration}
+	c_w \gg \alpha \, c_l
+\end{equation}
+ wodurch sich die Differentialgleichung weiter vereinfacht zu
 \begin{equation}
 	\dot{c_w} = - \frac{k}{h_{eff}} \cdot c_w
 \end{equation}
 Unter den gemachten Annahmen, ergibt sich bei einer Evasion, also dem Übergang von $CO_2$ aus dem Wasser in die Luft, ein Verhalten der Konzentration von $CO_2$ im Wasser, welches sich durch folgende Formel zeitlich beschreiben lässt:
-\begin{equation}
+\begin{equation}\label{exponential}
 c_w(t) = c_w(0) \, exp\Big(- \frac{k}{h_{eff}}t\Big)
 \end{equation}
 
 \subsection{Transfergeschwindigkeit}
 Ein wichtiger Parameter zur quantitativen Bewertung des Gasaustauschs ist die Transfergeschwindigkeit $k$. Sie wird üblicherweise in der Einheit $\frac{cm}{h}$ angegeben.
 Diese Geschwindigkeit hängt vor allem von der Konzentrationsdifferenz $\Delta c$ des zu messenden Gases in beiden Fluiden an der Grenzschicht ab. Der Zusammenhang wird durch folgende Gleichung beschrieben: 
-\begin{equation}
-	k = \frac{j}{\Delta c} = \frac{j}{\alpha c_w - c_l{den}}
+\begin{equation}\label{transfergeschwindigkeit}
+	k = \frac{j}{\Delta c} = \frac{j}{\alpha c_w - c_l}
 \end{equation}
 Dabei ist $j$ der Netto-Fluss des Gases.
 Bei der Konzentration muss dabei beachtet werden, dass nicht alles abgegebene Gas des einen Fluids auch direkt von dem anderen aufgenommen werden kann. Hier ist als Messgröße die Löslichkeit $\alpha$ zu betrachten, die an die Wasserkonzentration $c_w$ multipliziert wird. Sie gibt Aufschluss über die tatsächliche Konzentration im Gas. Für diese Konstante gibt es Tabellen, in denen der passende Wert für die jeweiligen Versuchsbedingungen herausgesucht werden kann (etwa \cite{jaehne}, Abb. 4). Gemessen wurde dieser im thermodynamischen Gleichgewicht  zwischen Luft und Wasser.
 Im betrachteten Boxmodell kann vereinfachend angenommen werden, dass die Gaskonzentration an allen Stellen eines Mediums gleich ist und somit auch die Transfergeschwindigkeit nicht lokal variiert werden muss.
 Diese Näherung wird auch durch den Versuchsaufbau begünstigt, indem etwa immer neue $CO_2$-arme Luft eingespült wird.
 
-\subsection{Messmethode: Indikator}
+\subsection{Messmethoden}
+An dem verwendeten Versuchsaufbau werden viele relevanten Informationen gemessen, um ein möglichst genaues Bild von dem vorliegenden Aufbau zu erhalten und daraus das passenste Modell abzuleiten. Auch soll der genaue Einfluss der verschiedenen Großen auf die Transfergeschwindigkeit untersucht werden. 
+Zur Messung der Standardgrößen Druck, Temperatur und Wasserhöhe werden einfache Sensoren mit bekannter Technik verwendet. Dazu sind an dieser Stelle keine weiteren Erklärungen erforderlich.
+Von besonderem Interesse ist hier die Transfergeschwindigkeit, wozu die Kontentrationen von $CO_2$ in Wasser bekannt sein muss. Die Messung des Gases in Luft kann einfach vernachlässigt werden, da Gleichung \eqref{exponential} unter Annahme des Boxmodells mit \ref{Luftkonzentration} hergeleitet wurde.
+Damit muss mit Formel \ref{exponential} lediglich die Zeit nach versuchsbeginn und die Anfangs- und die Momentankonzentration bekannt sein, um die Transfergeschwindigkeit auszurechnen. \\
 
-\subsection{Messmethode: Spektrometrie}
+Zur Messung der Gaskonzentration in Wasser gibt es verschiedene Methoden, von denen in diesem Versuch zwei verschiedene verwendet wurden und im Folgenden näher erläutert werden.
+\subsubsection*{Indikator}
+\subsubsection*{Spektrometrie}
+
+
+
 \subsection{title}
 
 
