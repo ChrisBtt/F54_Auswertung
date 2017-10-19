@@ -8,25 +8,25 @@ def to_hour(seconds):
 
 
 time_sec2, hI1 = np.loadtxt(
-    'Wellenlängenbereich 284-836/FP_10_08_2017_10_02_13_HIoverI_Wavebin0284to0836.txt',
+    'VE-Wasser/Wellenlängenbereich 284-836/FP_10_08_2017_10_02_13_HIoverI_Wavebin0284to0836.txt',
     skiprows=1, usecols=(1, 2), unpack=True)
 hI2 = np.loadtxt(
-    'Wellenlängenbereich 288-432/FP_10_08_2017_10_02_13_HIoverI_Wavebin0288to0432.txt',
+    'VE-Wasser/Wellenlängenbereich 288-432/FP_10_08_2017_10_02_13_HIoverI_Wavebin0288to0432.txt',
     skiprows=1, usecols=2, unpack=True)
 hI3 = np.loadtxt(
-    'Wellenlängenbereich 524-880/FP_10_08_2017_10_02_13_HIoverI_Wavebin0524to0880.txt',
+    'VE-Wasser/Wellenlängenbereich 524-880/FP_10_08_2017_10_02_13_HIoverI_Wavebin0524to0880.txt',
     skiprows=1, usecols=2, unpack=True)
 hI4 = np.loadtxt(
-    'Wellenlängenbereich 524-880/FP_10_08_2017_10_02_13_HIoverI_Wavebin0304to0376.txt',
+    'VE-Wasser/Wellenlängenbereich 524-880/FP_10_08_2017_10_02_13_HIoverI_Wavebin0304to0376.txt',
     skiprows=1, usecols=2, unpack=True)
 hI5 = np.loadtxt(
-    'Wellenlängenbereich 596-796/FP_10_08_2017_10_02_13_HIoverI_Wavebin0596to0796.txt',
+    'VE-Wasser/Wellenlängenbereich 596-796/FP_10_08_2017_10_02_13_HIoverI_Wavebin0596to0796.txt',
     skiprows=1, usecols=2, unpack=True)
 
 time2 = to_hour(time_sec2)
 
 co2Air = np.loadtxt(
-    'FP_10_08_2017_10_02_13-data.asc',
+    'VE-Wasser/FP_10_08_2017_10_02_13-data.asc',
     skiprows=1, usecols=2, unpack=True)
 
 plt.plot(time2[259:702], hI1[259:702] ** 2 / 0.038 / 4681 * 10 ** 6, color='blue', label='284 - 836')
@@ -34,7 +34,7 @@ plt.plot(time2[259:702], hI2[259:702] ** 2 / 0.038 / 5697 * 10 ** 6, color='gree
 plt.plot(time2[259:702], hI3[259:702] ** 2 / 0.038 / 3984 * 10 ** 6, color='violet', label='524 - 880')
 plt.plot(time2[259:702], hI4[259:702] ** 2 / 0.038 / 4110 * 10 ** 6, color='orange', label='304 - 376')
 plt.plot(time2[259:702], hI5[259:702] ** 2 / 0.038 / 3643 * 10 ** 6, color='brown', label='596 - 796')
-plt.plot(time2[259:702], co2Air[259:702], '-r', label='Luftkonzentration')
+plt.plot(time2[259:702], co2Air[259:702], '-r', label='luftseitige $CO_2$-Konzentration')
 plt.xlabel('Zeit $[h]$')
 plt.ylabel('Konzentration $[ppm]$')
 plt.ylim(10 ** 2, 10 ** 5)

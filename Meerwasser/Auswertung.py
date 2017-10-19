@@ -25,43 +25,50 @@ def messungen(evasion_start, evasion_stop, begasung_start, begasung_stop, sauer_
 
 
 time_sec2, conduct, tempWater = np.loadtxt(
-    'FP_10_08_2017_12_54_02_Conductivity_Twater-data.asc',
+    'Meerwasser/FP_10_08_2017_12_54_02_Conductivity_Twater-data.asc',
     skiprows=1, usecols=(1, 2, 3), unpack=True)
 
 time2 = to_hour(time_sec2)
 
-plt.plot(time2, tempWater, marker='.', linewidth=2, color='red', label='Temperatur')
+time_sec1, co2_air, tempAir, wind, waterHeight, p0xyAbs = np.loadtxt(
+    'Meerwasser/FP_10_08_2017_12_53_23-data.asc', skiprows=2,
+    usecols=range(1, 7), unpack=True)
+
+time1 = to_hour(time_sec1)
+
+plt.plot(time2, tempWater, marker='.', linewidth=2, color='red', label='Wassertemperatur')
+plt.plot(time1, tempAir, '-r', linewidth=1, label='Lufttemperatur')
 plt.xlabel('Zeit $[h]$')
 plt.ylabel('Temperatur $[°C]$')
-plt.title('Wassertemperatur')
+plt.title('Wasser- und Lufttemperatur')
 messungen(1594, 4997, 817, 1554, 5567, 5753, 6731, 6925, 22.1, 0, 130, 338, 753, 6958, 7047, 1745, 1761, 257, 22.0, 22.2)
 plt.legend(loc='best')
-plt.savefig('Wassertemperatur.pdf', format='PDF')
+plt.savefig('Meerwasser/Wassertemperatur.pdf', format='PDF')
 plt.show()
-
+'''
 plt.plot(time2, conduct, '-r', label='Leitfähigkeit', linewidth=1)
 plt.xlabel('Zeit $[h]$')
 plt.ylabel('Leitfähigkeit $[\mu S/cm]$')
 plt.title('Leitfähigkeit')
 messungen(1594, 4997, 817, 1554, 5567, 5753, 6731, 6925, 100, 0, 130, 338, 753, 6958, 7047, 1745, 1761, 257, 75, 125)
 plt.legend(loc='best')
-plt.savefig('Leitfähigkeit.pdf', format='PDF')
-plt.show()
-
+#plt.savefig('Leitfähigkeit.pdf', format='PDF')
+#plt.show()
+'''
 time_sec1, co2_air, tempAir, wind, waterHeight, p0xyAbs = np.loadtxt(
-    'FP_10_08_2017_12_53_23-data.asc', skiprows=2,
+    'Meerwasser/FP_10_08_2017_12_53_23-data.asc', skiprows=2,
     usecols=range(1, 7), unpack=True)
 
 time1 = to_hour(time_sec1)
-
+'''
 plt.plot(time1, co2_air, marker='.', color='red', label='Partialdruck', linewidth=1)
 plt.xlabel('Zeit $[h]$')
 plt.ylabel('Partialdruck $[ppm]$')
 plt.title('$CO_2$ Partialdruck in Luft')
 messungen(1594, 4997, 817, 1554, 5567, 5753, 6731, 6925, 500, 0, 130, 338, 753, 6958, 7047, 1745, 1761, 257, 450, 550)
 plt.legend(loc='best')
-plt.savefig('Partialdruck.pdf', format='PDF')
-plt.show()
+#plt.savefig('Partialdruck.pdf', format='PDF')
+#plt.show()
 
 plt.plot(time1, tempAir, '-r', linewidth=1, label='Temperatur')
 plt.xlabel('Zeit $[h]$')
@@ -69,8 +76,8 @@ plt.ylabel('Temperatur $[°C]$')
 plt.title('Lufttemperatur')
 messungen(1594, 4997, 817, 1554, 5567, 5753, 6731, 6925, 24.0, 0, 130, 338, 753, 6958, 7047, 1745, 1761, 257, 23.95, 24.05)
 plt.legend(loc='best')
-plt.savefig('Lufttemperatur.pdf', format='PDF')
-plt.show()
+#plt.savefig('Lufttemperatur.pdf', format='PDF')
+#plt.show()
 
 plt.plot(time1, wind, '-r', linewidth=1, label='Geschwindigkeit')
 plt.xlabel('Zeit $[h]$')
@@ -78,8 +85,8 @@ plt.ylabel('Geschwindigkeit $[m/s]$')
 plt.title('Windgeschwindigkeit')
 messungen(1594, 4997, 817, 1554, 5567, 5753, 6731, 6925, 5.0, 0, 130, 338, 753, 6958, 7047, 1745, 1761, 257, 4.8, 5.2)
 plt.legend(loc='best')
-plt.savefig('Windgeschwindigkeit.pdf', format='PDF')
-plt.show()
+#plt.savefig('Windgeschwindigkeit.pdf', format='PDF')
+#plt.show()
 
 plt.plot(time1, waterHeight, '-r', linewidth=1, label='Höhe')
 plt.xlabel('Zeit $[h]$')
@@ -87,14 +94,14 @@ plt.ylabel('Höhe $[mm]$')
 plt.title('Wasserhöhe')
 messungen(1594, 4997, 817, 1554, 5567, 5753, 6731, 6925, 75, 0, 130, 338, 753, 6958, 7047, 1745, 1761, 257, 74, 76)
 plt.legend(loc='best')
-plt.savefig('Wasserhoehe.pdf', format='PDF')
-plt.show()
-
+#plt.savefig('Wasserhoehe.pdf', format='PDF')
+#plt.show()
+'''
 plt.plot(time1, p0xyAbs, '-r', linewidth=1, label='Druck')
 plt.xlabel('Zeit $[h]$')
 plt.ylabel('Druck $[bar]$')
-plt.title('Luftdruck im Kanal')
+plt.title('$CO_2$ Druck im Begasungsschlauch')
 messungen(1594, 4997, 817, 1554, 5567, 5753, 6731, 6925, 1.2, 0, 130, 338, 753, 6958, 7047, 1745, 1761, 257, 1.15, 1.25)
 plt.legend(loc='best')
-plt.savefig('Luftdruck.pdf', format='PDF')
+plt.savefig('Meerwasser/Luftdruck.pdf', format='PDF')
 plt.show()
