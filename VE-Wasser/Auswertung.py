@@ -23,19 +23,26 @@ def messungen(evasion_start, evasion_stop, begasung_start, begasung_stop, sauer_
 
 
 time_sec2, conduct, tempWater = np.loadtxt(
-    'FP_10_08_2017_10_02_57_Conductivity_Twater-data.asc',
+    'VE-Wasser/FP_10_08_2017_10_02_57_Conductivity_Twater-data.asc',
     skiprows=1, usecols=(1, 2, 3), unpack=True)
 
 time2 = to_hour(time_sec2)
 
-# plt.plot(time2, tempWater, marker='.', color='red', label='Temperatur', linewidth=1)
-# plt.xlabel('Zeit $[h]$')
-# plt.ylabel('Temperatur $[°C]$')
-# plt.title('Wassertemperatur')
-# messungen(2256, 5844, 1173, 2040, 6596, 6774, 8401, 8602, 22.0, 2515, 2555, 0, 469, 730, 1035, 8634, 8815)
-# plt.legend(loc='best')
-# plt.savefig('Wassertemperatur.pdf', format='PDF')
-# plt.show()
+time_sec1, co2_air, tempAir, wind, waterHeight, p0xyAbs = np.loadtxt(
+    'VE-Wasser/FP_10_08_2017_10_02_13-data.asc', skiprows=2,
+    usecols=range(1, 7), unpack=True)
+
+time1 = to_hour(time_sec1)
+
+plt.plot(time2, tempWater, marker='.', color='red', label='Wassertemperatur', linewidth=1)
+plt.plot(time1, tempAir, '-r', linewidth=1, label='Lufttemperatur')
+plt.xlabel('Zeit $[h]$')
+plt.ylabel('Temperatur $[°C]$')
+plt.title('Wasser- und Lufttemperatur')
+messungen(2256, 5844, 1173, 2040, 6596, 6774, 8401, 8602, 22.0, 2515, 2555, 0, 469, 730, 1035, 8634, 8815)
+plt.legend(loc='best')
+plt.savefig('VE-Wasser/Wassertemperatur.pdf', format='PDF')
+plt.show()
 
 # plt.plot(time2, conduct, '-r', label='Leitfähigkeit', linewidth=1)
 # plt.xlabel('Zeit $[h]$')
@@ -45,12 +52,6 @@ time2 = to_hour(time_sec2)
 # plt.legend(loc='best')
 # plt.savefig('Leitfähigkeit.pdf', format='PDF')
 # plt.show()
-
-time_sec1, co2_air, tempAir, wind, waterHeight, p0xyAbs = np.loadtxt(
-    'FP_10_08_2017_10_02_13-data.asc', skiprows=2,
-    usecols=range(1, 7), unpack=True)
-
-time1 = to_hour(time_sec1)
 
 # plt.plot(time1, co2_air, marker='.', color='red', label='Partialdruck', linewidth=1)
 # plt.xlabel('Zeit $[h]$')
@@ -70,14 +71,14 @@ time1 = to_hour(time_sec1)
 # plt.savefig('Lufttemperatur.pdf', format='PDF')
 # plt.show()
 
-plt.plot(time1, wind, '-r', linewidth=1, label='Geschwindigkeit')
-plt.xlabel('Zeit $[h]$')
-plt.ylabel('Geschwindigkeit $[m/s]$')
-plt.title('Windgeschwindigkeit')
-messungen(2256, 5844, 1173, 2040, 6596, 6774, 8401, 8602, 5.0, 2515, 2555, 0, 469, 730, 1035, 8634, 8815)
-plt.legend(loc='best')
-plt.savefig('Windgeschwindigkeit.pdf', format='PDF')
-plt.show()
+#plt.plot(time1, wind, '-r', linewidth=1, label='Geschwindigkeit')
+#plt.xlabel('Zeit $[h]$')
+#plt.ylabel('Geschwindigkeit $[m/s]$')
+#plt.title('Windgeschwindigkeit')
+#messungen(2256, 5844, 1173, 2040, 6596, 6774, 8401, 8602, 5.0, 2515, 2555, 0, 469, 730, 1035, 8634, 8815)
+#plt.legend(loc='best')
+#plt.savefig('Windgeschwindigkeit.pdf', format='PDF')
+#plt.show()
 
 # plt.plot(time1, waterHeight, '-r', linewidth=1, label='Höhe')
 # plt.xlabel('Zeit $[h]$')

@@ -8,14 +8,12 @@ def to_hour(seconds):
     return seconds / 3600
 
 
-time_sec2, conduct = np.loadtxt(
-    'FP_10_08_2017_10_02_57_Conductivity_Twater-data.asc',
-    skiprows=1, usecols=(1, 2), unpack=True)
+time_sec2, conduct = np.loadtxt('/Users/logosalmac/Desktop/F54_Auswertung/VE-Wasser/FP_10_08_2017_10_02_57_Conductivity_Twater-data.asc',skiprows=1, usecols=(1, 2), unpack=True)
 
 time2 = to_hour(time_sec2)
 
 time_sec1, co2Air = np.loadtxt(
-    'FP_10_08_2017_10_02_13-data.asc',
+    '/Users/logosalmac/Desktop/F54_Auswertung/VE-Wasser/FP_10_08_2017_10_02_13-data.asc',
     skiprows=1, usecols=(1, 2), unpack=True)
 
 time1 = to_hour(time_sec1)
@@ -25,14 +23,14 @@ def linear(x,a,b):
 
 popt, pcov = curve_fit(linear, time2[275:718], conduct[275:718] ** 2 / 37456 / 0.038 * 10 ** 6)
 
-plt.plot(time2[275:718], conduct[275:718] ** 2 / 37456 / 0.038 * 10 ** 6, '-b', label='Wasserkonzentration')
-plt.plot(time2[275:718], co2Air[259:702], '-r', label='Luftkonzentration')
+plt.plot(time2[275:718], conduct[275:718] ** 2 / 37456 / 0.038 * 10 ** 6, '-b', label='wasserseitige $CO_2$-Konzentration')
+plt.plot(time2[275:718], co2Air[259:702], '-r', label='luftseitige $CO_2$-Konzentration')
 plt.xlabel('Zeit $[h]$')
 plt.ylabel('Partialdruck $[ppm]$')
 plt.yscale('log')
 plt.legend(loc='best')
-plt.savefig('LeitfähigkeitQuadrat.pdf', format='PDF')
-# plt.show()
+plt.savefig('LeitfaehigkeitQuadrat.pdf', format='PDF')
+plt.show()
 
 print("Steigung: ", popt[0])
 

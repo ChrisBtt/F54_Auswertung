@@ -6,6 +6,8 @@
 %% werden, sonst \"a..
 \usepackage[utf8x]{inputenc}
 %% dieses package erlaubt, bei deutscher Tastatur Umlaute, ß direkt einzugeben
+\usepackage[LGRgreek]{mathastext}
+%% kursiv in Formeln nicht verwenden
 
 \textwidth=170mm
 \textheight=250mm
@@ -55,7 +57,7 @@ Da die Erdoberfläche zu knapp 70\% aus Wasser besteht, ist es für den globalen
 Um die Mechanismen genau verstehen zu können, eignen sich Feldversuche nur bedingt, da dort die Parameter der Experimente nicht gezielt beeinflusst werden können. Das Experiment wird deshalb speziell in einem Wind-Wellen-Kanal durchgeführt. Einführend soll deshalb etwas Grundlagenwissen für den Versuch diskutiert werden.
 
 Wichtig zu wissen ist, dass die Transfergeschwindigkeit für den Gasaustausch zu großen Teilen von Wind, Wellen und Oberflächenfilmen abhängt. Dies wird teilweise im Folgenden untersucht. In der Grenzschicht zwischen den beiden aufeinandertreffenden Fluiden ist für den Transport des Gases hauptsächlich Diffusion verantwortlich, fernab davon vorwiegend Turbulenzen. Die Grenzschicht beschreibt dabei den Übergang zwischen zwei Medien unterchiedlicher Dichte, wobei deren Dicke hier als etwa $1 mm$ angenommen werden kann.
-Da auch der Einfluss der Zusammensetzung des Wassers verstanden werden soll, werden bei dem Experiment außerdem zwei verschiedene Flüssigkeiten vermessen: vollentsalzenes Wasser (VE-Wasser) und mit $NaOH$ versetztes VE-Wasser, was hier Meerwasser modelliert, da dieses auf natürliche Weise leicht basisch ist. Um Konzentrationsänderungen von $CO_2$ schließlich bestimmen zu können, sind geeignete Messverfahren notwendig. Hier angewendet wird die Leitfähigkeitsmethode und die Indikator-Methode, welche an gegebener Stelle im Detail aufgegriffen werden. 
+Da auch der Einfluss der Zusammensetzung des Wassers verstanden werden soll, werden bei dem Experiment außerdem zwei verschiedene Flüssigkeiten vermessen: vollentsalzenes Wasser (VE-Wasser) und mit $NaOH$ versetztes VE-Wasser, was hier Meerwasser modelliert, da dieses auf natürliche Weise leicht basisch ist. Um Konzentrationsänderungen von $CO_2$ schließlich bestimmen zu können, sind geeignete Messverfahren notwendig. Hier angewendet wird die Leitfähigkeitsmethode und die Indikator-Methode, welche an gegebener Stelle im Detail aufgegriffen werden.
 
 In diesem Versuch sollen die Messdaten vorrangig mit dem einfachen Boxmodell ausgewertet und verglichen werden. Dort werden die zwei Fluide als jeweils ein Rechteck dargestellt und dadurch ist es möglich das ganze System durch eine einfach Exponentialgleichung zu beschreiben. Die detailierte Erklärung des Modells folgt im Theorieteil.
 
@@ -111,15 +113,15 @@ Nachfolgend soll nur auf die wichtigsten Schritte während des Experiments einge
 	\hfill% fuegt Platz ein, das rueckt die beiden Bilder an den Rand
 	\parbox{82.5mm}{
 		\centering
-		\includegraphics[width=82.5mm]{VE-Wasser/Luftdruck}
-		\caption{Luftdruck}
+		\includegraphics[width=82.5mm]{VE-Wasser/Windgeschwindigkeit}
+		\caption{Windgeschwindigkeit}
 	}
 	\centering
 	% hier schon der komplixiert Fall, dass 2 Bilder nebeneinander gesetzt werden
 	\parbox{82.5mm}{
 		\centering
-		\includegraphics[width=82.5mm]{VE-Wasser/Lufttemperatur}
-		\caption{Lufttemperatur}
+		\includegraphics[width=82.5mm]{VE-Wasser/Wassertemperatur}
+		\caption{Wasser- und Lufttemperatur}
 	}
 	\hfill% fuegt Platz ein, das rueckt die beiden Bilder an den Rand
 	\parbox{82.5mm}{
@@ -137,29 +139,56 @@ Nachfolgend soll nur auf die wichtigsten Schritte während des Experiments einge
 	\hfill% fuegt Platz ein, das rueckt die beiden Bilder an den Rand
 	\parbox{82.5mm}{
 		\centering
-		\includegraphics[width=82.5mm]{VE-Wasser/Wassertemperatur}
-		\caption{Wassertemperatur }
-	}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	% hier schon der komplixiert Fall, dass 2 Bilder nebeneinander gesetzt werden
-	\parbox{82.5mm}{
-		\centering
-		\includegraphics[width=82.5mm]{VE-Wasser/Windgeschwindigkeit}
-		\caption{Windgeschwindigkeit}
-	}
-	\hfill% fuegt Platz ein, das rueckt die beiden Bilder an den Rand
-	\parbox{82.5mm}{
-		\centering
 		%\includegraphics[width=82.5mm]{VE-Wasser/Wassertemperatur}
-		%\caption{Wassertemperatur im Wind-Wellen-Kanal \"uber Zeit}
+		%\caption{Wassertemperatur }
 	}
 \end{figure}
+
+\paragraph{Diskussion der zeitlichen Verläufe\\}
+%Intro
+Die pysikalischen Parameter, Leitfähigkeit, Windgeschwindigkeit, $CO_2$-Partialdruck und die Wasserhöhe im Windkanal, sowie die Luft- und Wassertemperatur
+wurden während der gesamten Zeit des Experiments aufgezeichnet, um Ergebnisse besser innerhalb ihrer physikalischen Rahmenbedingungen
+erklären zu können. Zunächst erscheint es jedoch als notwendig, den Verlauf der Messdaten als solchen zu diskutieren.
+%Windgeschwindigkeit
+Der Verlauf der Windgeschwindigkeit (Abb. ???) beispielsweise zeigt deutlich auf, wann der Wind zu- und wann abgeschalten wurde. Während des
+Umschaltvorgangs nimmt die Windgeschwindigkeit abrupt zu oder ab. Dies ist vor allem damit zu erklären, dass es im Luftraum sog.
+Sekundärströmungen gibt. Das System ist vorwiegend turbulent, was zur Folge hat, dass nicht nur Gasbeimischungen schnell
+verteilt werden, sondern auch der Impuls schnell transportiert wird. Die Windgeschwindigkeit nimmt daher überall im Kanal
+schnell und mit der selben Rate zu bzw. ab. Dennoch ist auch zu beobachten, dass sich nach dem Anschaltvorgang die Windgeschwindigkeit
+mit etwas Verzögerung auf einen finalen Wert einstellt. Das liegt daran, dass am Anfang der Impuls an das sich aufbauende Wellenfeld abgegeben wird
+und auch der Wasserkörper durch die Windscherung langsam in Rotation versetzt wird. Irgendwann ist der Impulsübertrag vom Wind zum Wasser gleich
+des Impulsverlustes des Wassers durch die Reibung an den Wännden des Windkanals, sowie durch interne Reibung und es stellt sich ein konstanter Wind ein.
+%Luft- und Wassertemperatur
+Auch eine Betrachtung der Luft- und Wassertemperatur (Abb. ???) ist sinnvoll. In beiden Fällen ist ein kontinuierlicher Anstieg aufgezeichnet.
+Dies ist damit zu erklären, dass die Windmühle nicht thermisch isoliert ist und so Luft- und Wassertemperatur langfristig der in diesem Fall
+höheren Umgebungstemperatur folgen. Das stufenartige Verhalten der Wassertemperatur ist auf eine grobe Auflösung des Messsensors zurückzuführen.
+%Wasserhöhe
+Nun zur gemessenen Wasserhöhe (Abb. ???). Diese schwankt sehr stark (Ausschläge von bis zu 15\% gemessen an der gesamten Wertespanne), was auch durchaus
+so beabsichtigt wurde. Durch den eingestellten Wind werden innerhalb des Kanals Wellen erzeugt, die die Wassersäule teilweise massiv beeinflussen. Es wurden Wellen von etwa einem Zentimeter Höhe
+beobachtet. Das entspricht bei einer Fülllhöhe von etwa sieben Zentimetern im Kanal bereits 15\%. Der überwiegende Abfall der Füllhöhe ist eigentlich
+unerwünscht und durch eine undichte Stelle im Versuchsaufbau zu begründen. Es entwich über den ganzen Messungszeitraum Flüssigkeit aus dem Kanal, was
+nicht wieder hinzugegeben wurde. Auch der Skimmvorgang zur Beseitigung der Oberflächenfilme (siehe ???) hat dafür gesorgt, das Wasser dem Kanalsystem entnommen,
+jedoch nicht wieder hinzugegeben wurde. Eine solche Abnahme kann während der Zeit des Skimmens beobachtet werden.
+%Partialdruck von CO_2
+Der Partialdruck von $CO_2$ in der Luft ist in den Abb. ??? zu sehen. Er hängt direkt mit den am Experiment durchgeführten Eingriffen zusammen, die durch die horizontalen Balken
+eingezeichnet sind. So ist etwa der größte Anstieg gefolgt von dem exponentiellen Abfall die Reaktion auf die Begasung des
+Wassers mit sofortiger Evasion des $CO_2$ in die Luft. Der Abfall ist dann so zu erklären, dass durch die sinkende Gaskonzentration im Wasser auch
+der abzugebende Teil an $CO_2$ an die Luft kleiner wird. Dadurch senkt sich der Partialdruck des Gases insgesamt.
+Der kleinere Hochpunkt zu Beginn beider Messreihen ist mit \cite{jaehne} Abb. 8 zu verstehen. So ist die $CO_2$-Konzentration im VE-Wasser nie ganz
+null, da durch den Ionentauscher nur geladene Teilchen herausgefiltert werden können. Gelöst liegen aber $CO_2, CO_3^{2-} $ und $HCO_3^-$ vor,
+wovon $CO_2$ Moleküle nicht geladen sind und in Lösung bleiben. Dieser Anteil evasiert in die anfangs stehende Luft, der Partialdruck steigt.
+%Leitfähigkeit
+Die Leitfähigkeitsmessungen zeigen in Abb. ??? erst nach der Evasionsmessungen starke Veränderungen, was besonders durch die Zugabe von $HCl$ und $NaOH$
+bewirkt wird. Dadurch befinden sich plötzlich viel mehr Ionen im Kanal, die durch die Messmethode registriert werden. Die Zugaben erfolgten jeweils
+Schrittweise, was auch den gezackten Anstieg in den Plots erklärt. Der Abfall zwischen den beiden Peaks, der wieder in beiden Abbildungen vorkommt,
+zeigt die Neutralisation von Salzsäure mit Natronlauge, also die Bindung der Ionen zu ungeladenen Molekülen, ehe weiter Lauge hinzugegeben wird. Auch
+danach ist während der Messung eine konstante Menge Ionen vorhanden, was die Leitfähigkeit nicht ändert.
+
+
 
 \subsubsection{Berechnung $CO_2$-Konzentration in Wasser nach Begasung}
 
-Für die Konzentration des gelösten $CO_2$ Gases in Wasser wird zuerst berechnet, mit wieviel Mol an $CO_2$ das Wasser durch den Oxygenator begast wurde. Dazu wird nach folgenden Formeln gerechnet:
+Für die Konzentration des gelösten $CO_2$-Gases in Wasser wird berechnet, mit wieviel Mol an $CO_2$ das Wasser durch den Oxygenator begast wurde. Dazu werden folgende Formeln verwendet:
 
 \begin{equation}
 n = \dot V t \frac{\rho}{M}
@@ -169,42 +198,46 @@ n = \dot V t \frac{\rho}{M}
 \Delta n = \sqrt{(t \frac{\rho}{M} \Delta \dot V)^{2}+(\dot V \frac{\rho}{M} \Delta t)^{2}}
 \end{equation}
 
-Mit Dichte: $\rho_{CO_2} = 1.98 \frac{kg}{m^3} $, molarer Masse: $M_{CO_2} = 44.0\frac{g}{mol} $, Zeit:  $t = (867 \pm 8)s$ und Massenfluss: $\dot V = (45.0 \pm 0.1)\frac{ml}{min}$ folgt daraus:
+Mit Dichte: $\rho_{CO_2} = 1.98 \,\frac{kg}{m^3} $, molarer Masse: $M_{CO_2} = 44.0\,\frac{g}{mol} $, Zeit:  $t = (867 \pm 8) \, s$ und Massenfluss: $\dot V = (45.0 \pm 0.1)\,\frac{ml}{min}$ folgt daraus:
 
 \begin{equation}
 n_{w0} = (0.0293 \pm 0.0003) \,mol
 \end{equation}
 
-Dieser Wert wird zun\"achst mit dem durch die Löslichkeit von $CO_2$ in Wasser bestimmten Wert verglichen, um absch\"atzen zu können, ob das Wasser w\"ahrend der Begasung schon in S\"attigung war. Das Volumen des Wassers in der Rinne wurde im Skript mit $V = 12.6 \,l $ angegeben. Außerdem ist das Volumen des Leitungssystems von $V=1,1 \,l $ zu ber\"ucksichtigen. Dieses wurde aus Gleichung (44) \cite{jaehne} bestimmt.
+Ein Vergleich dieses Wertes mit dem durch die Löslichkeit von $CO_2$ in Wasser bestimmten Wert, um absch\"atzen zu können, ob das Wasser w\"ahrend der Begasung schon in S\"attigung war, liegt nahe. Das Volumen des Wassers in der Rinne betrug $V = 12.6 \,l $. Außerdem ist das Volumen des Leitungssystems von $V=1.1 \,l $ zu ber\"ucksichtigen. Die Berechnungsgrundlage hierfür bietet \cite{jaehne} Gleichung (44).
 \begin{equation}
 n = \alpha_{CO_2}(21 °C) \, V = 0.52 \, mol
 \end{equation}
 
-Hierbei wurde der Wert für die L\"oslichkeit aus Abbildung 4 \cite{jaehne} verwendet. Es kann also angenommen werden, dass sich die komplette begaste Stoffmenge an $CO_2$ in dem Wasser gelöst hat. Daraus ergibt sich für die anfängliche Konzentration:
+Wobei der Wert für die L\"oslichkeit aus \cite{jaehne} Abb. 4 verwendet wurde. Es kann also angenommen werden, dass sich die komplette begaste Stoffmenge an $CO_2$ in dem Wasser gelöst hat. Daraus ergibt sich für die anfängliche Konzentration:
 \begin{equation}
 c_{w0} = \frac{n}{V} = (2.11 \pm 0.02)\cdot 10^{-3} \frac{mol}{l}
 \end{equation}
 
 \subsubsection{Untersuchung Boxmodell-Bedingung}
 
-\underline{Frage:} Zu welchen Zeiten im Evasionsexperiment ist die Annahme $c_a \ll c_w/\alpha $ für das einfache Boxmodell erfüllt? \\ \\
+Als theoretische Grundlage wird zur Untersuchung des Gasaustauschs vereinfachend das Boxmodell angenommen. Für dieses ist jedoch enscheidend, dass die Bedingung
+$c_a \ll c_w/\alpha $ gilt. Ob überhaupt bzw. zu welchen Zeiten diese tatsächlich vorliegt, ist entscheidend um die Güte der darauf basierenden Aussagen einschätzen zu können.
 
 \paragraph{Leitfähigkeitsmethode\\}
 
 Zuerst folgt aus der Annahme $\Lambda ^2 \propto c_w $, dass $\Lambda ^2 = m \cdot c_w $. Danach wird also die Konstante $m$ gemäß
 \begin{equation}
-m = \frac{\Lambda^2(0)}{c_w(0)} = \frac{\Lambda^2(0)}{c_{w0}} = 37456 \frac{(\mu S)^2 l}{cm^2 mol} = 37.5 * 10^-6 \frac{S^2 cm^2}{mol}
+m = \frac{\Lambda^2(0)}{c_w(0)} = \frac{\Lambda^2(0)}{c_{w0}} = 37456 \frac{(\mu S)^2 l}{cm^2 mol} = 37.5 * 10^{-9} \frac{S^2 l}{cm^2 mol}
 \end{equation}
-bestimmt. Hierbei wurde (5) zur Berechung verwendet. Mit Hilfe dieser Konstanten kann nun $c_w$ für beliebige Zeiten berechnet und, geteilt durch die Löslichkeit (siehe Abbildung 4 \cite{jaehne}), über die Zeit aufgetragen werden. Trägt man in demselben Diagramm auch den gemessenen Partialdruck von $CO_2$ auf und verwendet eine logarithmische Skalierung, so lässt sich die Größenordnung erkennen, die zwischen $c_a$ und $\frac{c_w}{\alpha}$ liegt.
+bestimmt. Eine Berechung von $c_w$ für beliebige Zeiten ist damit möglich. Außerdem ist eine logarithmische Skalierung für die ins Verhältnis setzende Darstellung des Partialdrucks von $CO_2$ und der wasserseitigen $CO_2$-Konzentration von Vorteil, um die zwischen $c_a$ und $\frac{c_w}{\alpha}$ liegende Größenordnung abschätzen zu können.
+Die Berücksichtigung der Löslichkeit in der Einheit $\frac{mol}{l}$ liefert den Partialdruck.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=120mm]{VE-Wasser/LeitfaehigkeitQuadrat.pdf}
-	\caption{Plot zur Abschätzung der Konzentrationsverhältnisse während Evasion}
+	\caption{Konzentrationen während Evasion}
 \end{figure}
 
-Es ist zu erkennen, dass vor allem zu Beginn der Evasion die Bedingung $c_a \ll c_w/\alpha $ für das einfache Boxmodell deutlich erfüllt ist, es liegen hier beinahe 2 Größenordnungen zwischen den Konzentrationen (Faktor 100). Gegen Ende, man könnte auch schon ab der Hälfte der Evasion sagen, je nach dem, wie streng die Ungleichung zu betrachten ist, wird die Bedingung für das Boxmodell zunehmend nicht mehr erfüllt. Es liegt hier nur noch weniger als eine Größenordnung zwischen den Konzentrationen. \\\\
-Eine Anmerkung ist an dieser Stelle noch zu machen. Die Messung des Partialdrucks von $CO_2$ weist mit ungefähr 170 ppm einen realtiv großen Offset auf. Dieser wurde hier jedoch nicht beachtet, da er für die qualitative Aussage keinen Unterschied macht.
+In Abbildung 9 ist zu erkennen, dass bis zur Hälfte der Evasion die Bedingung $c_a \ll c_w/\alpha $ für das einfache Boxmodell deutlich erfüllt ist. Es liegt bis dahin
+mindestens ein Verältnis von 1:10 zwischen den Konzentrationen vor. Zu Beginn der Evasion sogar eines von 1:100. \\\\
+Eine Anmerkung ist an dieser Stelle noch zu machen. Die Messung des Partialdrucks von $CO_2$ weist mit ungefähr 170 ppm einen realtiv großen Offset auf.
+Dessen Berücksichtigung hat jedoch für obige Beurteilung keine Relevanz, da die Verhältnisse nicht entscheidend beeinflusst werden.
 
 \paragraph{Indikatormethode\\}
 
@@ -212,7 +245,7 @@ Auch für diese Methode wird eine Annahme über eine Proportionalität verwendet
 \begin{equation}
 m = \frac{(\frac{[HI]}{[I^-]})^2(0)}{c_w(0)} = \frac{(\frac{[HI]}{[I^-]})^2(0)}{c_{w0}}
 \end{equation}
-bestimmt. Des Weiteren sollen verschiedene Verhältnisse $\frac{[HI]}{[I^-]}$, die mit Hilfe des Heurisko-Skripts für verschiedene Wellenlängenbereiche bestimmt wurden, untersucht werden:
+bestimmt. Hierbei soll (0) den Anfangszeitpunkt der Messung anzeigen. Mit Hilfe des Heurisko-Skripts können die Verhältnisse $\frac{[HI]}{[I^-]}$ für verschiedene Wellenlängenbereiche bestimmt werden.
 
 \begin{figure}[H]
 	\centering
@@ -220,14 +253,14 @@ bestimmt. Des Weiteren sollen verschiedene Verhältnisse $\frac{[HI]}{[I^-]}$, d
 	\parbox{57.5mm}{
 		\centering
 		\begin{tabular}{c|c|c}
-			$\lambda_1 [nm] - \lambda_2 [nm]$ & $\frac{[HI]}{[I^-]}(0)$ & $k [\frac{l}{mol}]$ \\ \hline
+			$\lambda_1 [nm] - \lambda_2 [nm]$ & $\frac{[HI]}{[I^-]}(0)$ & $m [\frac{l}{mol}]$ \\ \hline
 			284 - 836 & 2.51 & 2986 \\
 			288 - 432 & 2.70 & 3455 \\
 			524 - 880 & 2.49 & 2938 \\
 			596 - 796 & 2.37 & 2662 \\
 			304 - 376 & 2.75 & 3584
 		\end{tabular}
-		\caption{Tabelle der verschiedenen $\frac{[HI]}{[I^-]}$ und m für unterschiedliche Wellenlängenbereiche}
+		\caption{Übersicht der verschiedenen $\frac{[HI]}{[I^-]}$ und m für unterschiedliche Wellenlängenbereiche}
 	}
 	\hfill% fuegt Platz ein, das rueckt die beiden Bilder an den Rand
 	\parbox{95mm}{
@@ -237,20 +270,43 @@ bestimmt. Des Weiteren sollen verschiedene Verhältnisse $\frac{[HI]}{[I^-]}$, d
 	}
 \end{figure}
 
-Grundsätzlich liefert diese Methode die selben Ergebnisse, wie bereits die Leitfähigkeitsmethode. Deshalb soll nur auf die Unterschiede, welche aus den verschiedenen $\frac{[HI]}{[I^-]}$ bzw. verwendeten Wellenlängenbereichen resultieren, eingegangen werden. Es ist zu erkennen, dass die Verwendung eines sehr großen Bereichs des Spektrums zu starken Verrauschungen führt, was vor allem daran liegt, dass auch die grünen Wellenlängen, also der sensible Umschlagsbereich des Indikators verwendet wird. Abgesehen davon scheint der verwendete Wellenlängenbereich keinen großen Einfluss auf die Bewertung der Annahme zu haben, die oben beschriebene Aussage bleibt allgemein gültig.\\
-Wichtig an dieser Stelle noch anzumerken ist, dass auch hier, wie im Folgenden (bei Meermodellwasser), der Offset der Luftkonzentrationsmessung nicht berücksichtigt wurde, da nur qualitative Aussagen gemacht werden sollen. Dies erklärt auch, warum die Konzentration im Wasser gegen Ende der Evasion scheinbar unter die in der Luft fällt. Es sollte sich hier maximal ein Gleichgewicht einstellen. Durch das fehlende Offset lässt sich dies jedoch erklären.
+Grundsätzlich liegt bei dieser Methode gegenüber der Leitfähigkeitsmethode ein ähnlicher Verlauf der Konzentrationsverhältnisse vor.
+Unterschiede, welche aus den verschiedenen $\frac{[HI]}{[I^-]}$ bzw. verwendeten Wellenlängenbereichen resultieren, lassen sich jedoch erkennen.
+Die Verwendung eines sehr großen Bereichs des Spektrums führt zu starken Verrauschungen, was vor allem daran liegt, dass auch die grünen Wellenlängen,
+also der sensible Umschlagsbereich des Indikators verwendet werden. Warum dieser zu besonders großen Ausschlägen führt, lässt sich sehr gut mit Hilfe von
+\cite{jaehne} Gleichung 37 verstehen. Ist die Lösung ungefähr so sauer wie alkalisch, wird der Zähler in der Gleichung sehr klein.
+Veränderungen in den Intensitäten haben entsprechend relativ gesehen größere Auswirkungen. Außerdem sind die Intensitäten proportional zu
+den Konzentrations- bzw. Ionenverhältnisse, was zu den in Abb. ??? erkennbaren Veränderungen führt. Abgesehen davon hat der verwendete
+Wellenlängenbereich jedoch keinen großen Einfluss auf die Bewertung der Annahme. Das obige Ergebniss bleibt allgemein gültig. Mehr Details über die 
+Spektren finden sich im anschließenden Kapitel.\\
+Auch die in Abschnitt ??? getätigte Aussage über den nicht verwendeten Offset bleibt gültig. Dies erklärt ebenfalls, warum die Konzentration
+im Wasser gegen Ende der Evasion scheinbar unter die in der Luft fällt.
 
-\subsubsection{Bestimmung Transfergeschwindigkeit}
+\subsubsection{Spektren von VE-Wasser}
+
+Mit Hilfe der Daten aus der Vorauswertung des Spektren-Bildes, welche mit dem Heurisko-Skript durchgeführt wurde, konnten die sauren und basischen
+Referenzspektren, sowie das Lampen- und das Dunkelspektrum geplottet werden:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=120mm]{VE-Wasser/Referenzspektren}
+	\caption{Plot der Spektren für VE-Wasser}
+\end{figure}
+
+\subsubsection{Bestimmung der Transfergeschwindigkeit in VE-Wasser mit der \\
+Leitfähigkeitsmethode}
 
 Ähnlich wie bei der Leitfähigkeitsmethode zur Abschätzung der Boxmodell-Bedingung wird auch dieses mal der Zusammenhang $\Lambda ^2 \propto c_w $ verwendet. Zusätzlich fließt in die Berechnung auch noch
 \begin{equation}
 c_w(t) = c_w(0) \cdot exp(-\frac{k}{h_{eff}}t)
 \end{equation}
-mit ein, was aus Gleichung (42) \cite{jaehne} entnommen wurde. Hierbei entspricht $k$ der gesuchten Transfergescwindigkeit und $h_{eff}$ der effektiven Wasserhöhe, welche aus der gemessenen Wasserhöhe und dem Wasservolumen im Rohrsystem nach (43) und (44) \cite{jaehne} bestimmt wurde. Es ergibt sich also insgesamt folgender Zusammenhang:
+mit ein, was aus Gleichung (42) \cite{jaehne} entnommen wurde. Hierbei entspricht $k$ der gesuchten Transfergeschwindigkeit und $h_{eff}$ der effektiven Wasserhöhe, welche aus der gemessenen Wasserhöhe und dem Wasservolumen im Rohrsystem nach \cite{jaehne} (43) und (44) bestimmt wurde. Es ergibt sich also insgesamt folgender Zusammenhang:
 \begin{equation}
 k = -2 \frac{ln(\Lambda (t)/\Lambda (0))}{t} \cdot h_{eff}
 \end{equation}
-Das Verhältnis der Leitfähigkeiten muss also logarithmisch geplottet werden, sodass aus der Steigung des Graphen die Transfergeschwindigkeit bestimmt werden kann. Es wurden an dieser Stelle zwei Fits durchgeführt, einmal wurde direkt über den kompletten Zeitbereich eine Exponentialfunktion angepasst und beim zweiten Fit schrittweise für zwei Bereiche und dann die Transfergeschwindigkeit gemittelt.
+Das Verhältnis der Leitfähigkeiten wird logarithmisch geplottet, sodass aus der Steigung des Graphen die Transfergeschwindigkeit bestimmt werden kann. Bei den zwei Fits wurde einmal direkt über den kompletten Zeitbereich eine Exponentialfunktion angepasst und ein anderes Mal schrittweise für zwei Bereiche und dann die Transfergeschwindigkeit gemittelt.
+Es wird $\Lambda (t)/\Lambda (0)$ aufgetragen, auch wenn es sich mit der Konzentration um einen quadratischen Zusammenhang handelt, da dieser bei logarithmischer
+Betrachtung in einen Vorfaktor von 2 übergeht.
 
 \begin{figure}[H]
 	\centering
@@ -290,7 +346,9 @@ k_1 = (39.2 \pm 0.8)\, \frac{cm}{h}
 	k_2 = (33.6 \pm 0.5)\, \frac{cm}{h}
 \end{equation}
 
-Zur besseren Bewertung der Ergebnisse wurden noch die Mittelwerte und Standardabweichungen der Windgeschwindigkeit und der Wassersäule für die verschiedenen Fitbereiche berechnet. Die mittlere quadratische Neigung der Wellen konnte nicht gemessen werden, da das dafür vorgesehene Messgerät nicht funktionstüchtig war.
+Die Unsicherheiten ergeben sich aus den Fitunsicherheiten. Außerdem muss bei dem zweiten Fit die Mittelung berücksichtigt werden.\\
+
+Im Folgenden aufgeführte Messwerte dienen dazu obige Werte der Transfergeschwindigkeiten in einen physikalischen Kontext setzen zu können. Es wurden die Standardabweichungen bzw. Mittelwerte verwendet.
 
 \paragraph{Durchgängiger Fit}
 \begin{itemize}
@@ -308,30 +366,20 @@ Zur besseren Bewertung der Ergebnisse wurden noch die Mittelwerte und Standardab
 	\item Wassersäule $h_w[mm] = 81.6 \pm 1.2 $
 \end{itemize}
 
-\subsubsection{Plot der Spektren}
-
-Mit Hilfe der Daten aus der Vorauswertung des Spektren-Bildes, welche mit dem Heurisko-Skript gemacht wurde, wurden die sauren und basischen Referenzspektren, sowie das Lampen- und das Dunkelspektrum geplottet:
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=120mm]{VE-Wasser/Referenzspektren}
-	\caption{Plot der Spektren für VE-Wasser}
-\end{figure}
-
-\subsubsection{Bestimmung Transfergeschwindigkeit - $\frac{[HI]}{[I^-]}$ Methode}
+\subsubsection{Bestimmung Transfergeschwindigkeit in VE-Wasser - $\frac{[HI]}{[I^-]}$ Methode}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=120mm]{VE-Wasser/TransferhIKnick}
-	\caption{Plot der Konzentrationen $\frac{[HI]}{[I^-]}$ über Zeit für verschiedene Wellenlängen mit Fits (Trennung bei $t \approx 0.4h$)}
+	\caption{Konzentrationen $\frac{[HI]}{[I^-]}$ über Zeit für verschiedene Wellenlängen mit Fits (Trennung bei $t \approx 0.4h$)}
 \end{figure}
 
-Aus der Steigung des Graphen wird nun wieder die Transfergeschwindigkeit nach Gleichung (8) und der Annahme $(\frac{[HI]}{[I^-]})^2 \propto c_w $ bestimmt.
+Aus der Steigung des Graphen wird nun wieder die Transfergeschwindigkeit nach der Indikatormethode bestimmt.
 Daraus folgt für die Geschwindigkeit (siehe oben):
 \begin{equation}
 k = -2 \frac{ln(\frac{[HI]}{[I^-]}(t)/\frac{[HI]}{[I^-]}(0))}{t} \cdot h_{eff}
 \end{equation}
 
-Die einzelnen Transfergeschwindigkeiten, welche aus den Fits aus der ersten Hälfte des Graphen ermittelt wurden, werden mit denen der zweiten Hälfte zu dem Wert $k_{ges} \, [\frac{cm}{h}]$ gemittelt.
+Die einzelnen Transfergeschwindigkeiten aus den Fits der ersten Hälfte des Graphen, werden mit denen der zweiten Hälfte zu dem Wert $k_{ges} \, [\frac{cm}{h}]$ gemittelt.
 
 \begin{figure}[H]
 	\centering
@@ -345,7 +393,10 @@ Die einzelnen Transfergeschwindigkeiten, welche aus den Fits aus der ersten Häl
 	\caption{Transfergeschwindigkeiten für unterschiedliche Wellenlängenbereiche}
 \end{figure}
 
-Zur besseren Bewertung der Ergebnisse wurden noch die Mittelwerte und Standardabweichungen der Windgeschwindigkeit und der Wassersäule für die verschiedenen Fitbereiche berechnet. Die mittlere quadratische Neigung der Wellen konnte nicht gemessen werden, da das dafür vorgesehene Messgerät nicht funktionstüchtig war.
+Auch aus dem zweiten Bereich wurden für die Evasion Tarnsfergeschwindigkeiten berechnet, auch wenn hier die Boxmodellbedingung nicht erfüllt ist. Dies dient
+der späteren Diskussion. \\
+Für die verschiedenen Bereiche, welche sich von denen bei der Leitfähigkeitsmethode unterscheiden, sind erneut die pysikalischen Messdaten gemittelt und
+mit Standardabweichung aufgelistet.
 
 \paragraph{Teil 1}
 \begin{itemize}
@@ -372,15 +423,15 @@ Zur besseren Bewertung der Ergebnisse wurden noch die Mittelwerte und Standardab
 	\hfill% fuegt Platz ein, das rueckt die beiden Bilder an den Rand
 	\parbox{82.5mm}{
 		\centering
-		\includegraphics[width=82.5mm]{Meerwasser/Luftdruck}
-		\caption{Luftdruck}
+		\includegraphics[width=82.5mm]{Meerwasser/Windgeschwindigkeit}
+		\caption{Windgeschwindigkeit}
 	}
 	\centering
 	% hier schon der komplixiert Fall, dass 2 Bilder nebeneinander gesetzt werden
 	\parbox{82.5mm}{
 		\centering
-		\includegraphics[width=82.5mm]{Meerwasser/Lufttemperatur}
-		\caption{Lufttemperatur}
+		\includegraphics[width=82.5mm]{Meerwasser/Wassertemperatur}
+		\caption{Wasser- und Lufttemperatur}
 	}
 	\hfill% fuegt Platz ein, das rueckt die beiden Bilder an den Rand
 	\parbox{82.5mm}{
@@ -398,23 +449,8 @@ Zur besseren Bewertung der Ergebnisse wurden noch die Mittelwerte und Standardab
 	\hfill% fuegt Platz ein, das rueckt die beiden Bilder an den Rand
 	\parbox{82.5mm}{
 		\centering
-		\includegraphics[width=82.5mm]{Meerwasser/Wassertemperatur}
-		\caption{Wassertemperatur }
-	}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	% hier schon der komplixiert Fall, dass 2 Bilder nebeneinander gesetzt werden
-	\parbox{82.5mm}{
-		\centering
-		\includegraphics[width=82.5mm]{Meerwasser/Windgeschwindigkeit}
-		\caption{Windgeschwindigkeit}
-	}
-	\hfill% fuegt Platz ein, das rueckt die beiden Bilder an den Rand
-	\parbox{82.5mm}{
-		\centering
 		%\includegraphics[width=82.5mm]{Meerwasser/Wassertemperatur}
-		%\caption{Wassertemperatur im Wind-Wellen-Kanal \"uber Zeit}
+		%\caption{Wassertemperatur }
 	}
 \end{figure}
 
@@ -424,43 +460,19 @@ Zur besseren Bewertung der Ergebnisse wurden noch die Mittelwerte und Standardab
 
 \subsubsection{Berechnung $CO_2$-Konzentration in Wasser nach Begasung}
 
-Für die Konzentration des gelösten $CO_2$ Gases in Wasser wird zuerst berechnet, mit wieviel Mol an $CO_2$ das Wasser durch den Oxygenator begast wurde. Dazu wird nach folgenden Formeln gerechnet:
+Analog zu der Berechnung der Anfangskonzentration bei VE-Wasser erfolgt die Berechung auch bei
+Meermodellwasser. Folgende Werte liegen der Berechung in diesem Falle zugrunde: Dichte: $\rho_{CO_2} = 1.98 \frac{kg}{m^3} $, molarer Masse: $M_{CO_2} = 44.0\frac{g}{mol} $, Zeit:  $t = (737 \pm 8)s$ und Massenfluss: $\dot V = (45.0 \pm 0.1)\frac{ml}{min}$.\\
 
-\begin{equation}
-n = \dot V t \frac{\rho}{M}
-\end{equation}
+Es ergeben sich die beiden Zwischenergebnisse, $n_{w0} = (0.0249 \pm 0.0003) \,mol$ und $n = 0.52 \, mol$, woraus eine schlussendliche
+Anfangskonzentration von $c_{w0} = (1.82 \pm 0.02)\cdot 10^{-3} \frac{mol}{l}$ folgt. Gegenüber der Anfangskonzentration bei VE-Wasser (siehe ???)
+ergibt sich vor allem wegen der unterschiedlich langen Begasungszeit ein Unterschied.
 
-\begin{equation}
-\Delta n = \sqrt{(t \frac{\rho}{M} \Delta \dot V)^{2}+(\dot V \frac{\rho}{M} \Delta t)^{2}}
-\end{equation}
 
-Mit Dichte: $\rho_{CO_2} = 1.98 \frac{kg}{m^3} $, molarer Masse: $M_{CO_2} = 44.0\frac{g}{mol} $, Zeit:  $t = (737 \pm 8)s$ und Massenfluss: $\dot V = (45.0 \pm 0.1)\frac{ml}{min}$ folgt daraus:
-
-\begin{equation}
-n_{w0} = (0.0249 \pm 0.0003) \,mol
-\end{equation}
-
-Dieser Wert wird zun\"achst mit dem durch die Lösbarkeit von $CO_2$ in Wasser bestimmten Wert verglichen, um absch\"atzen zu können, ob das Wasser w\"ahrend der Begasung schon in S\"attigung war. Das Volumen des Wassers in der Rinne wurde im Skript mit $V = 12.6 \,l $ angegeben. Außerdem ist das Volumen des Leitungssystems von $V=1,1 \,l $ zu ber\"ucksichtigen. Dieses wurde aus Gleichung (44) \cite{jaehne} bestimmt.
-\begin{equation}
-n = \alpha_{CO_2}(21 °C) \, V = 0.52 \, mol
-\end{equation}
-
-Hierbei wurde der Wert für die L\"oslichkeit aus Abbildung 4 \cite{jaehne} verwendet und es wurde davon ausgegangen, dass sich diese durch die Zugabe von Natronlauge in das VE-Wasser nicht wesentlich geändert hat. Es kann also angenommen werden, dass sich die komplette begaste Stoffmenge an $CO_2$ in dem Wasser gelöst hat. Daraus ergibt sich für die anfängliche Konzentration:
-\begin{equation}
-c_{w0} = \frac{n}{V} = (1.82 \pm 0.02)\cdot 10^{-3} \frac{mol}{l}
-\end{equation}
-
-\subsubsection{Untersuchung Boxmodell-Bedingung}
-
-\underline{Frage:} Zu welchen Zeiten im Evasionsexperiment ist die Annahme $c_a \ll c_w/\alpha $ für das einfache Boxmodell erfüllt? \\ \\
+\subsubsection{Untersuchung Boxmodell-Bedingung\\}
 
 \paragraph{Indikatormethode\\}
 
-Für diese Methode wird eine Annahme über eine Proportionalität verwendet: $\frac{[HI]}{[I^-]} \propto c_w $, sodass $\frac{[HI]}{[I^-]} = m \cdot c_w $. Danach wird also die Konstante $m$ gemäß
-\begin{equation}
-m = \frac{\frac{[HI]}{[I^-]}(0)}{c_w(0)} = \frac{\frac{[HI]}{[I^-]}(0)}{c_{w0}}
-\end{equation}
-bestimmt. Des Weiteren sollen verschiedene Verhältnisse $\frac{[HI]}{[I^-]}$, die mit Hilfe des Heurisko-Skripts für verschiedene Wellenlängenbereiche bestimmt wurden, untersucht werden: \\
+Analog zu VE-Wasser wird auch hier die Proportionalität zwischen dem Verhältnis der Ionen und der Konzentration verwendet: $\frac{[HI]}{[I^-]} \propto c_w $, sodass $\frac{[HI]}{[I^-]} = m \cdot c_w $. Zu beachten ist, dass hier im Gegensatz zu VE-Wasser keine quadratische Proportionalität vorliegt, was auf den eingesetzen Indikator zurückzuführen ist.  \\
 
 \begin{figure}[H]
 	\centering
@@ -475,43 +487,41 @@ bestimmt. Des Weiteren sollen verschiedene Verhältnisse $\frac{[HI]}{[I^-]}$, d
 			496 - 764 & 7.25 & 3984 \\
 			548 - 644 & 7.48 & 4110
 		\end{tabular}
-		\caption{Tabelle der verschiedenen $\frac{[HI]}{[I^-]}$ und m für unterschiedliche Wellenlängenbereiche}
+		\caption{Übersicht der verschiedenen $\frac{[HI]}{[I^-]}$ und m für unterschiedliche Wellenlängenbereiche}
 	}
 	\hfill% fuegt Platz ein, das rueckt die beiden Bilder an den Rand
 	\parbox{95mm}{
 		\centering
 		\includegraphics[width=95mm]{Meerwasser/Indikator.pdf}
-		\caption{Plot zur Abschätzung der Konzentrationsverhältnisse während Evasion für verschiedene $\frac{[HI]}{[I^-]}$ bzw. m}
+		\caption{Abschätzung der Konzentrationsverhältnisse während Evasion für verschiedene $\frac{[HI]}{[I^-]}$ bzw. m}
 	}
 \end{figure}
 
-Es ist zu erkennen, dass vor allem zu Beginn der Evasion die Bedingung $c_a \ll c_w/\alpha $ für das einfache Boxmodell deutlich erfüllt ist, es liegen hier beinahe 2 Größenordnungen zwischen den Konzentrationen (Faktor 100). Gegen Ende, man könnte auch schon ab der Hälfte der Evasion sagen, je nach dem, wie streng die Ungleichung zu betrachten ist, wird die Bedingung für das Boxmodell zunehmend nicht mehr erfüllt. Es liegt hier nur noch weniger als eine Größenordnung zwischen den Konzentrationen. Zu beachten ist auch, dass die Verwendung eines großen Wellenlängenbereichs zu einer starken Verrauschung der Konzentration führt. Dies liegt auch hier wieder an dem sensiblen Umschlagsbereich, der mit einbezogen wird. Unterschiede zwischen den anderen Wellenlängenbereichen sind kaum zu erkennen.\\\
-Für die Anmerkungen zu dem Offset der Luftkonzentration siehe oben.
+Die Beobachtungen bezüglich der Bedingung $c_a \ll c_w/\alpha $ sind für das Meermodellwasser die gleichen wie für das VE-Wasser (siehe VE-Wasser/Untersuchung Boxmodell-Bedingung/Indikatormethode).
 
 \subsubsection{Plot der Spektren}
-
-Mit Hilfe der Daten aus der Vorauswertung des Spektren-Bildes, welche mit dem Heurisko-Skript gemacht wurde, wurden die sauren und basischen Referenzspektren, sowie das Lampen- und das Dunkelspektrum geplottet:
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=120mm]{Meerwasser/Referenzspektren}
-	\caption{Plot der Spektren für das Meermodellwasser}
+	\caption{Spektren für das Meermodellwasser}
 \end{figure}
 
 \subsubsection{Bestimmung Transfergeschwindigkeit - $\frac{[HI]}{[I^-]}$ Methode}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=120mm]{Meerwasser/TransferhIKnick}
-	\caption{Plot der Konzentrationen $\frac{[HI]}{[I^-]}$ über Zeit für verschiedene Wellenlängen mit Fits (Trennung bei $t \approx 0.83h$)}
+	\caption{Konzentrationen $\frac{[HI]}{[I^-]}$ über Zeit für verschiedene Wellenlängen mit Fits (Trennung bei $t \approx 0.83h$)}
 \end{figure}
 
-Aus der Steigung des Graphen wird nun wieder die Transfergeschwindigkeit nach Gleichung (8) und der Annahme $\frac{[HI]}{[I^-]} \propto c_w $ bestimmt.
-Daraus folgt für die Geschwindigkeit (siehe oben):
+Analog zum Vorgehen bei VE-Wasser wird auch dieses Mal die Steigung des Fits zur Bestimmung der Transfergeschwindigkeit
+herangezogen, allerdings wie bereits bei der Untersuchung der Boxmodell-Bedingung unter Verwendung von $\frac{[HI]}{[I^-]} \propto c_w $.
+Daraus folgt:
 \begin{equation}
 k = - \frac{ln(\frac{[HI]}{[I^-]}(t)/\frac{[HI]}{[I^-]}(0))}{t} \cdot h_{eff}
 \end{equation}
 
-Die einzelnen Transfergeschwindigkeiten, welche aus den Fits aus der ersten Hälfte des Graphen ermittelt wurden, werden mit denen der zweiten Hälfte zu dem Wert $k_{ges} \, [\frac{cm}{h}]$ gemittelt.
+Damit ergeben sich aufgeführte Werte:
 
 \begin{figure}[H]
 	\centering
@@ -524,8 +534,6 @@ Die einzelnen Transfergeschwindigkeiten, welche aus den Fits aus der ersten Häl
 	\end{tabular}
 	\caption{Transfergeschwindigkeiten für unterschiedliche Wellenlängenbereiche}
 \end{figure}
-
-Zur besseren Bewertung der Ergebnisse wurden noch die Mittelwerte und Standardabweichungen der Windgeschwindigkeit und der Wassersäule für die verschiedenen Fitbereiche berechnet. Die mittlere quadratische Neigung der Wellen konnte nicht gemessen werden, da das dafür vorgesehene Messgerät nicht funktionstüchtig war.
 
 \paragraph{Teil 1}
 \begin{itemize}
@@ -540,31 +548,9 @@ Zur besseren Bewertung der Ergebnisse wurden noch die Mittelwerte und Standardab
 
 \section{Diskussion}
 
-% Zeitliche Verläufe der Messdaten
-In diesem Versuch sollen vorrangig die Auswirkungen der verschiedenen Umwelteinflüsse auf den Gasaustausch zwischen Ozean und Atmosphäre untersucht werden. In dem für dieses Experiment verwendeten Wind-Wellen-Kanal wurde besonders die Wasserzusammensetzung betrachtet. Andere zu beobachtende Parameter, wie die Windgeschwindigkeit, der Oberflächenfilm oder auch die Wasserhöhe konnten nahezu konstant gehalten werden (Abbildungen 2-8, 17-23).
+% Intro
+An dieser Stelle werden abschließend die Ergebnisse des Versuchs diskutiert.
 
-Die zeitlichen Verläufe der Messdaten zwischen beiden Messungen unterscheiden sich kaum. Am meisten ähnelt sich der Luftdruck, wobei zwischen Abbildung 3 und 18 nicht nur der Verlauf gleich ist, sondern sogar die absoluten Zahlenwerte. Dies kommt daher, dass der atmosphärische Luftdruck sehr stabil ist und nur bei einem starken Wetterumschwung leicht seinen Wert ändert. Da der Kanal nicht luftdicht verschlossen war, sondern mehrere Luftlöcher existierten, konnte sich der Druck ungehindert auch innerhalb des Experiments einstellen.
-Der abrupte Anstieg des Drucks passiert zeitgleich mit Einsetzen der Begasung, was logischerweise durch das zusätzlich einströmende Gas zu erklären ist. Während des Prozesses ist der Druck nicht konstant. Dies rührt von einer leichten Schwankung in der Flussrate des $CO_2$ und somit wahrscheinlich von den statistischen Änderungen der Ausflussgeschwindigkeit des Gases aus der Gasflasche und der dahinter geschalteten Druckminderung her.
-Fast genauso ähneln sich die Abbildungen 8 und 23 für die Windgeschwindigkeiten. Der Ventilator für die künstliche Erzeugung des Winds wurde durch einen Elektromotor gesteuert und kannte dabei nur zwei Zustände: Wind an / Wind aus. Die Geschwindigkeit war zwar einstellbar, doch wurde sie für die Versuchsdauer konstant gelassen. Zu sehen ist noch ein zeitlich verzögertes Erreichen der eingestellten Windgeschwindigkeit nach Einschalten des Ventilators.
-Zur Schonung des Materials wurde der Propeller nicht sofort auf die gewünschte Geschwindigkeit hochgefahren, sondern erhöhte langsam seine Drehfrequenz. Zudem ist zu beachten, dass der Ventilator unabhängig von der Windmessung war und somit die tatsächliche Windgeschwindigkeit gemessen wurde. Diese kann sich nicht instantan auf die Geschwindigkeit des Propellers anpassen, sondern die Bewegungsänderung muss sich erst nach und nach durch die Luftschichten ausbreiten. Somit registriert das Potentiometer auch die langsame Anpassung der Luftbewegung an den Ventilator.
-
-Bei Betrachtung der Temperaturen bietet es sich an, neben den Messungen in beiden Versuchsteilen auch die Wasser- und die Lufttemperatur zu vergleichen (Abbildungen 7 \& 22, 4 \& 19. Abgesehen von kleinen Unsicherheiten am Anfang der Abbildungen 19 \& 22 sieht man eindeutig, dass alle vier Kurven linear ansteigen.
-Der Anstieg der Lufttemperatur wird hauptsächlich durch die Abwärme des Ventilatormotors hervorgerufen, was in der kleinen Luftkammer bereits einen nicht unerheblicher Einfluss darstellt.
-Die Graphen der Wassertemperatur zeigen einen stufenartigen Anstieg, der durch die ungenaue Datenaufzeichnung der Messwerte zu erklären ist. Dadurch sind zwar feine Schwankungen der Wassertemperatur nicht zu sehen, aber der allgemeine Trend ist klar ersichtlich. Zu erklären ist dieses Wachstum mit dem aus der Hausleitung stammenden VE-Wasser. Es ist generell kühler als die Raumtemperatur und steht bei der Evasionsmessung im Kanal, wo es ins thermische Gleichgewicht mit der Lufttemperatur gelangen will, sprich sich erwärmt.
-
-Die gemessene Wasserhöhe schwankt am meisten in beiden Versuchsteilen (Abbildungen 6 & 21), was auch durchaus so gewollt ist. Durch den eingestellten Wind werden innerhalb des Kanals Wellen erzeugt, die die Wassersäule teilweise massiv beeinflussen. Es wurden Wellen von etwa einem Zentimeter Höhe beobachtet, das entspricht bei einer Fülllhöhe von etwa sieben Zentimetern im Kanal bereits 15\%. Der überwiegende Abfall der Füllhöhe ist eigentlich unerwünscht und durch eine undichte Stelle im Versuchsaufbau zu begründen. Es entwich über den ganzen Messungszeitraum Flüssigkeit aus dem Kanal, was nicht wieder hinzugegeben wurde.
-
-Der Partialdruck von $CO_2$ im Wasser ist in den Abbildungen 5 \& 20 zu sehen. Er hängt direkt mit den am Experiment durchgeführten Eingriffen zusammen, die durch die horizontalen Balken eingezeichnet sind. So ist etwa der größte Anstieg gefolgt von dem exponentiellen Abfall die verzögerte Reaktion auf die Begasung des Wassers mit sofortiger Evasion des $CO_2$ in die Luft. Der Abfall ist dann so zu erklären, dass durch die sinkende Gaskonzentration im Wasser auch der abzugebende Teil an $CO_2$ an die Luft kleiner wird. Dadurch senkt sich der Partialdruck des Gases insgesamt.
-Der kleinere Hochpunkt zu Beginn beider Messreihen ist mit \cite{jaehne} Abb. 8
-zu verstehen. So ist die $CO_2$-Konzentration im VE-Wasser nie ganz null, da durch den Ionentauscher nur geladene Teilchen herausgefiltert werden können. Gelöst liegen aber $CO_2, CO_3^{2-} $ und $HCO_3^-$ vor, wovon $CO_2$ Moleküle nicht geladen sind und in Lösung bleiben.
-Dieser Anteil evasiert in die anfangs stehende Luft, der Partialdruck steigt. Nach dem Anschalten des Ventilators gelangt frische, gereinigte Luft in das Experiment und der $CO_2$ Anteil in Luft sinkt wieder auf den Anfangswert bis die Begasung wirksam wird.
-
-Die Leitfähigkeitsmessungen zeigen in Abb. 2 \& 17 erst nach der Evasionsmessungen starke Schwankungen, was besonders durch die Zugabe von $HCl$ und $NaOH$ bewirkt wird. Dadurch befinden sich plötzlich viel mehr Ionen im Kanal, die durch die Messmethode registriert werden. Die Zugaben erfolgten jeweils Schrittweise, was auch den gezackten Anstieg in den Plots erklärt.
-Der Abfall zwischen den beiden Peaks, der wieder in beiden Abbildungen vorkommt, zeigt die Neutralisation von Salzsäure mit Natronlauge, also die Bindung der Ionen zu ungeladenen Molekülen, ehe weiter Lauge hinzugegeben wird. Auch danach ist während der Messung eine konstante Menge Ionen vorhanden, was die Leitfähigkeit nicht ändert.
-
-Zu dem Versuchs- bzw. Auswertungsteil zur Bestimmung der Anfangskonzentration von $CO_2$ nach Beendigung der Begasung sollen an dieser Stelle noch einmal einige Dinge angemerkt werden. Zunächst wurde sowohl bei VE-, als auch bei Meermodellwasser die Menge an begastem $CO_2$ berechnet. Hierbei wurde der auf 21°C normierte Massenfluss verwendet, da wir nicht die exakte Temperatur des Gases, als es in den Oxygenator gelangt ist, bestimmen konnten. Auch wenn die Lufttemperatur mit ca. 23°C darüber lag, nehmen wir an, dass das Gas aus der Flasche etwas kühler war, weshalb die Normtemperatur gut passen sollte. Zur Abschätzung, ob sich auch das gesamte Gas im Wasser gelöst hat, erschien es sinnvoll zu bestimmen, wieviel Gas sich potentiell in dem Wasser lösen kann. Hierfür wurde die Löslichkeit für 21°C verwendet, was auch kein Problem darstellt, denn diese verändert sich über die Temperatur nicht so sehr, dass sie die Abschätzung signifikant beeinflussen würde. Außerdem ist zu erkennen, dass die Menge an begastem $CO_2$ deutlich unter der potentiell Lösbaren liegt. Daraus resultiert unsere Annahme, dass sämtliches Gas auch tatsächlich im Wasser gelöst wurde. Dies führt uns auf die beiden Anfangskonzentrationen von $c_{w0} = (2.11 \pm 0.02)\cdot 10^{-3} \frac{mol}{l}$ (VE-Wasser) und $c_{w0} = (1.82 \pm 0.02)\cdot 10^{-3} \frac{mol}{l}$ (Meermodellwasser). Die unterschiedlichen Werte ergeben sich vor allem aus den unterschiedlich langen Begasungszeiten. Es wurde von uns angenommen, dass die Zugabe von NaOH bei Meermodellwasser die Löslichkeit des Gases nicht signifikant ändert. Die Werte für die Anfangskonzentrationen erscheinen sinnvoll, denn sie fließen später in die Berechung der Transfergeschwindigkeiten mit ein und führen dort auf Werte, welche mit der Literatur übereinstimmen.
-
-Zu der Beurteilung der Boxmodellbedingung $c_a \ll c_w/\alpha $ während der Evasionsmessung ist hier auch noch etwas anzumerken, auch wenn die wesentlichen Ergebnisse bereits oben präsentiert und kommentiert wurden. Die unterschiedlichen Anfangskonzentrationen bei Beginn der Evasion für die unterschiedlichen Wasser ergeben sich aus den unterschiedlichen Zeiten, die zwischen Begasung und Evasion lagen. Diese war bei VE-Wasser nämlich höher, was zu einem größeren, bereits ausgegasten Teil an $CO_2$ geführt hat. Die Berechnungen mit Hilfe der beiden Methoden bei VE-Wasser und mit Hilfe der Indikatormethode bei Meermodellwasser liefern qualitativ die selben Aussage, was auch unseren Erwartungen entspricht. Auch ergeben sich keine großen Unterschiede zwischen der Indikator- und der Leitfähigkeitsmethode, was dafür spricht, dass diese in gleichem Maße für nachfolgende Berechnungen geeignet sind. Große Unterschiede zwischen den verwendeten Wellenlängenbereichen ergeben sich, abgesehen von den Wellenlängen die der Farbe des Indikators im Umschlagpunkt entsprechen, kaum. Hier treten starke Verrauschungen auf, was auf die Sensibilität (schnelle Farbänderung) des Indikators in diesem Bereich zurückzuführen ist. Wichtig abschließend noch zu erwähnen ist, dass die Boxmodell-Bedingung ab ungefähr Mitte der Evasion nicht mehr gültig ist. Trotzdem wurde sie in den weiteren Rechungen als über die ganze Zeit gültig erachtet. Dies könnte auch als potentielle Fehlerquelle für nachfolgende Ergebnisse angeführt werden. In jedem Fall ist zu sehen, dass sich in beiden Teilversuchen, die mit Hilfe der Indikatormethode schrittweise bestimmten Transfergeschwindigkeiten für die beiden Zeiträume stark unterscheiden.
 
 Im nächsten Schritt wurde mit der Leitfähigkeitsmethode nur die Transfergeschwindigkeit für VE-Wasser bestimmt. Die Methode ist auf Meermodellwasser aufgrund der zustätzlich anwesenden Ionen nicht anzuwenden. Die berechneten Transfergeschwindigkeiten von $k = (38.9 \pm 0.8)\, \frac{cm}{h}$ bzw. $k_{ges} = (36.4 \pm 0.9)\, \frac{cm}{h}$ liegen im Bereich der später nach der Indikatormethode bestimmten Werte und auch im Bereich der Literaturwerte (\cite{jaehne} Abb. 6). Die angegebenen Ungenauigkeiten ergeben sich aus den Fits, sind jedoch, vergleicht man das schrittweise mit dem Komplett-Fit Vorgehen, deutlich höher anzusetzen. Das schrittweise Vorgehen erscheint hier deutlich genauer zu sein, was an der Güte der Fits ersichtlich wird. Hier wird der Verlauf deutlich besser beschrieben. Auch unterschiedliche Windgeschwindigkeiten oder Höhen der Wassersäulen könnten für Differenzen gesorgt haben. Vor allem die Windgeschwindigkeiten haben sich gemessen an ihren Ungenauigkeiten stark geändert. Seltsam erscheint jedoch die geringere Transfergeschwindigkeit im zweiten Teil der schrittweisen Methode, auch wenn dort die Windgeschwindigkeit höher war. Umgekehrtes ist nämlich zu erwarten. Vielleicht hat sich in dieser Zeit aber auch ein Oberflächenfilm gebildet, der von uns nicht bemerkt wurde und so für eine Dämpfung gesorgt hat. Mit Daten können wir dies jedoch nicht belegen, da der $mss$ der Wellen nicht gemessen werden konnte, anhand dessen Abnahme dies begründet hätte werden können.
 
