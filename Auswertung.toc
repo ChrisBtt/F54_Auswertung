@@ -2,6 +2,7 @@
 \vspace {\baselineskip }
 \contentsline {section}{\numberline {1}Einleitung}{4}
 \contentsline {section}{\numberline {2}Theorie}{4}
+<<<<<<< HEAD
 \contentsline {subsection}{\numberline {2.1}Messmethoden}{4}
 \contentsline {subsection}{\numberline {2.2}title}{4}
 \contentsline {subsection}{\numberline {2.3}Boxmodell}{4}
@@ -33,3 +34,38 @@
 \contentsline {paragraph}{Teil 1}{17}
 \contentsline {paragraph}{Teil 2}{17}
 \contentsline {section}{\numberline {6}Diskussion}{17}
+=======
+\contentsline {subsection}{\numberline {2.1}Boxmodell}{4}
+\contentsline {subsection}{\numberline {2.2}Transfergeschwindigkeit}{5}
+\contentsline {subsection}{\numberline {2.3}Messmethoden}{5}
+\contentsline {subsubsection}{\numberline {2.3.1}Leitf\IeC {\"a}higkeit}{6}
+\contentsline {subsubsection}{\numberline {2.3.2}Spektrometrie}{6}
+\contentsline {subsection}{\numberline {2.4}title}{6}
+\contentsline {section}{\numberline {3}Versuchsanordnung}{6}
+\contentsline {section}{\numberline {4}Versuchsdurchf\"uhrung}{7}
+\contentsline {section}{\numberline {5}Auswertung/Ergebnisse}{8}
+\contentsline {subsection}{\numberline {5.1}VE-Wasser}{8}
+\contentsline {subsubsection}{\numberline {5.1.1}Zeitliche Verl\"aufe der Messdaten}{8}
+\contentsline {subsubsection}{\numberline {5.1.2}Berechnung $CO_2$-Konzentration in Wasser nach Begasung}{9}
+\contentsline {subsubsection}{\numberline {5.1.3}Untersuchung Boxmodell-Bedingung}{9}
+\contentsline {paragraph}{Leitf\IeC {\"a}higkeitsmethode\\}{10}
+\contentsline {paragraph}{Indikatormethode\\}{10}
+\contentsline {subsubsection}{\numberline {5.1.4}Bestimmung Transfergeschwindigkeit}{11}
+\contentsline {paragraph}{Durchg\IeC {\"a}ngiger Fit}{12}
+\contentsline {paragraph}{Schrittweiser Fit: Teil 1}{12}
+\contentsline {paragraph}{Schrittweiser Fit: Teil 2}{13}
+\contentsline {subsubsection}{\numberline {5.1.5}Plot der Spektren}{13}
+\contentsline {subsubsection}{\numberline {5.1.6}Bestimmung Transfergeschwindigkeit - $\frac {[HI]}{[I^-]}$ Methode}{14}
+\contentsline {paragraph}{Teil 1}{14}
+\contentsline {paragraph}{Teil 2}{15}
+\contentsline {subsection}{\numberline {5.2}Meermodellwasser}{16}
+\contentsline {subsubsection}{\numberline {5.2.1}Zeitliche Verl\"aufe der Messdaten}{16}
+\contentsline {subsubsection}{\numberline {5.2.2}Berechnung $CO_2$-Konzentration in Wasser nach Begasung}{17}
+\contentsline {subsubsection}{\numberline {5.2.3}Untersuchung Boxmodell-Bedingung}{17}
+\contentsline {paragraph}{Indikatormethode\\}{18}
+\contentsline {subsubsection}{\numberline {5.2.4}Plot der Spektren}{18}
+\contentsline {subsubsection}{\numberline {5.2.5}Bestimmung Transfergeschwindigkeit - $\frac {[HI]}{[I^-]}$ Methode}{19}
+\contentsline {paragraph}{Teil 1}{20}
+\contentsline {paragraph}{Teil 2}{20}
+\contentsline {section}{\numberline {6}Diskussion}{20}
+>>>>>>> 1d3f4cf948b3aac440f125c17b080be51006dfde

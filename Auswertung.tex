@@ -1,4 +1,5 @@
 \documentclass[12pt]{article}
+\usepackage{amsmath}
 \usepackage{graphicx}         % fuer das Einbinden von Grafiken
 \usepackage{float}    % für Grafiken, um [H] zu verwenden
 \usepackage[ngerman]{babel}   % weglassen, wenn in Englisch
@@ -61,19 +62,68 @@ Da auch der Einfluss der Zusammensetzung des Wassers verstanden werden soll, wer
 
 In diesem Versuch sollen die Messdaten vorrangig mit dem einfachen Boxmodell ausgewertet und verglichen werden. Dort werden die zwei Fluide als jeweils ein Rechteck dargestellt und dadurch ist es möglich das ganze System durch eine einfach Exponentialgleichung zu beschreiben. Die detailierte Erklärung des Modells folgt im Theorieteil.
 
-\section{Theorie}
-
-\subsection*{k-Wert}
-\subsection{Messmethoden}
-\subsection{title}
-
+\section{Theorie}\label{1}
 \subsection{Boxmodell}
-Erwähnt werden soll jedoch noch das Boxmodell, welches für die Berechnungen von entscheidender Bedeutung ist. Hierbei wird der Luft- und Wasserraum als jeweils eine separate Box betrachtet. Diese sind durch Parameter, wie die Konzentration des Gases beschrieben. Unter geeigneten Annahmen, welche teilweise in den Ergebnissen genauer betrachtet werden, ergibt sich bei einer Evasion, also dem Übergang von $CO_2$ aus dem Wasser in die Luft, ein Verhalten der Konzentration von $CO_2$ im Wasser, welches sich durch folgende Formel zeitlich beschreiben lässt:
-
+Für die quantitative Auswertung der Messdaten wird im Folgenden das Boxmodell verwendet. Dafür kann eine gekoppelte Differentialgleichung aufgestellt werden. Generell wird der Luft- und Wasserraum als jeweils eine separate Box betrachtet. Diese sind durch Parameter, wie die Konzentration des Gases beschrieben, die sich innerhalb der ganzen Box (also über das gesamten betrachtete Volumen) nicht ändern.
+Die für dieses Modell vereinfachend getroffenen Annahmen dürfen gemacht werden, da die betrachteten Effekte trotzdem größtenteils richtig beschrieben werden, was sich später anhand unserer Ergebnisse zeigen lässt.  
+Auch die Flussrichtung wird in diesem Experiment weitgehend durch äußere Einstellungen, etwa der Gaskonzentration, festgelegt.
+Besonders gilt hier die Annahme 
+\begin{equation}\label{Luftkonzentration}
+	c_w \gg \alpha \, c_l
+\end{equation}
+ wodurch sich die Differentialgleichung weiter vereinfacht zu
 \begin{equation}
+	\dot{c_w} = - \frac{k}{h_{eff}} \cdot c_w
+\end{equation}
+Unter den gemachten Annahmen, ergibt sich bei einer Evasion, also dem Übergang von $CO_2$ aus dem Wasser in die Luft, ein Verhalten der Konzentration von $CO_2$ im Wasser, welches sich durch folgende Formel zeitlich beschreiben lässt:
+\begin{equation}\label{exponential}
 c_w(t) = c_w(0) \, exp\Big(- \frac{k}{h_{eff}}t\Big)
 \end{equation}
-Auch auf diese wird in den Ergebnissen noch genauer eingegangen.
+
+\subsection{Transfergeschwindigkeit}
+Ein wichtiger Parameter zur quantitativen Bewertung des Gasaustauschs ist die Transfergeschwindigkeit $k$. Sie wird üblicherweise in der Einheit $\frac{cm}{h}$ angegeben.
+Diese Geschwindigkeit hängt vor allem von der Konzentrationsdifferenz $\Delta c$ des zu messenden Gases in beiden Fluiden an der Grenzschicht ab. Der Zusammenhang wird durch folgende Gleichung beschrieben: 
+\begin{equation}\label{transfergeschwindigkeit}
+	k = \frac{j}{\Delta c} = \frac{j}{\alpha c_w - c_l}
+\end{equation}
+Dabei ist $j$ der Netto-Fluss des Gases.
+Bei der Konzentration muss dabei beachtet werden, dass nicht alles abgegebene Gas des einen Fluids auch direkt von dem anderen aufgenommen werden kann. Hier ist als Messgröße die Löslichkeit $\alpha$ zu betrachten, die an die Wasserkonzentration $c_w$ multipliziert wird. Sie gibt Aufschluss über die tatsächliche Konzentration im Gas. Für diese Konstante gibt es Tabellen, in denen der passende Wert für die jeweiligen Versuchsbedingungen herausgesucht werden kann (etwa \cite{jaehne}, Abb. 4). Gemessen wurde dieser im thermodynamischen Gleichgewicht  zwischen Luft und Wasser.
+Im betrachteten Boxmodell kann vereinfachend angenommen werden, dass die Gaskonzentration an allen Stellen eines Mediums gleich ist und somit auch die Transfergeschwindigkeit nicht lokal variiert werden muss.
+Diese Näherung wird auch durch den Versuchsaufbau begünstigt, indem etwa immer neue $CO_2$-arme Luft eingespült wird.
+
+\subsection{Messmethoden}
+An dem verwendeten Versuchsaufbau werden viele relevanten Informationen gemessen, um ein möglichst genaues Bild von dem vorliegenden Aufbau zu erhalten und daraus das passenste Modell abzuleiten. Auch soll der genaue Einfluss der verschiedenen Großen auf die Transfergeschwindigkeit untersucht werden. 
+Zur Messung der Standardgrößen Druck, Temperatur und Wasserhöhe werden einfache Sensoren mit bekannter Technik verwendet. Dazu sind an dieser Stelle keine weiteren Erklärungen erforderlich.
+Von besonderem Interesse ist hier die Transfergeschwindigkeit, wozu die Kontentrationen von $CO_2$ in Wasser bekannt sein muss. Die Messung des Gases in Luft kann einfach vernachlässigt werden, da Gleichung \eqref{exponential} unter Annahme des Boxmodells mit \ref{Luftkonzentration} hergeleitet wurde.
+Damit muss mit Formel \ref{exponential} lediglich die Zeit nach versuchsbeginn und die Anfangs- und die Momentankonzentration bekannt sein, um die Transfergeschwindigkeit auszurechnen. \\
+
+Zur Messung der Gaskonzentration in Wasser gibt es verschiedene Methoden, von denen in diesem Versuch zwei Verschiedene verwendet und im Folgenden näher erläutert werden.
+Grundlegend messen beide Methoden aber den gleichen Wert, nämlich den Gehalt von Hydronium- Ionen ($H_3O^+$) in Wasser. 
+In entionisiertem Wasser liegen neben $H_2O$ Molekülen auch geringe Mengen an Hydroxid($OH^-$) und Hydronium Ionen vor. Bei Zugabe von $CO_2$ Gas bilden sich zusammen mit den $H^+$ Ionen des Hydroniums $HCO_3$ Ionen oder auch Kohlensäure ($H_2CO_3$) aus. Die Häufigkeit dieser chemischen Reaktionen ist von entscheidender Bedeutung, um die nachfolgenden Messmethoden verwenden zu können. Eine Betrachtung des Massenwirkungsgesetzes für die beiden chemischen verschieden zusammengesetzten Wasser ergibt für 
+\paragraph*{VE-Wasser}
+\begin{equation}
+	[CO_2] \propto [H_3O^+]^2
+\end{equation}
+und für 
+\paragraph*{Meerwasser}
+\begin{equation}
+	[CO^2] \propto [H_3O^+]
+\end{equation}
+
+\subsubsection{Leitfähigkeit}
+Bei der Leitfähigkeitsmethode wird ausgenutzt, dass Hydronium Ionen elektrisch geladen und somit leitfähig sind. Daher rührt auch die Bezeichnung der Methode. 
+Es wird angenommen, dass der Großteil der gemessenen Ionen durch das Vorhandensein von $CO_2$ Gas hervorgerufen wird. 
+Damit kann man eine direkte Proportionalität zwischen der gemessenen Leitfähigkeit und der Gaskonzentration herstellen und die Leitfähigkeit $\Lambda$ $[\mu S]$ von Wasser lässt sich durch eine Sonde messen. 
+
+\subsubsection{Spektrometrie}
+Die Konzentration von Hydronium und Hydroxid Ionen wirkt sich auch auf den pH-Wert aus bzw. definiert diesen erst. 
+Durch den Einsatz von Indikatoren kann dieser Wert sichtbar gemacht und im Farbschema numerisch dargestellt werden. 
+Es werden je nach erwartetem pH-Wert unterschiedliche Indikator Farbstoffe verwendet, die jedoch immer gleich aufgebaut sind. Sie bestehen aus einem Wasserstoffion und dem Indikatorrest. Der Trick bei Indikatoren liegt in der unterschiedlichen Farbe zwischen dem Molekül mit $H^+$ Ion und dem Rest ohne dieses Ion. Durch die farbliche Mischung beider Farben ist je nach pH-Wert eine andere Farbe erkennbar. 
+Durch Spektrometrie des durchsichtigen Wassers kann der Wert also zu jeder Zeit gemessen werden und durch die Proportionalität zur Gasmenge kann mit Gleichung \ref{exponential} die Transfergeschwindigkeit ermittelt werden.
+
+
+\subsection{title}
+
 
 
 
@@ -548,8 +598,34 @@ Damit ergeben sich aufgeführte Werte:
 
 \section{Diskussion}
 
+<<<<<<< HEAD
 % Intro
 An dieser Stelle werden abschließend die Ergebnisse des Versuchs diskutiert.
+=======
+% Zeitliche Verläufe der Messdaten
+In diesem Versuch sollen vorrangig die Auswirkungen der verschiedenen Umwelteinflüsse auf den Gasaustausch zwischen Ozean und Atmosphäre untersucht werden. In dem für dieses Experiment verwendeten Wind-Wellen-Kanal wurde besonders die Wasserzusammensetzung betrachtet. Andere zu beobachtende Parameter, wie die Windgeschwindigkeit, der Oberflächenfilm oder auch die Wasserhöhe konnten nahezu konstant gehalten werden (Abbildungen 2-8, 17-23).
+
+Die zeitlichen Verläufe der Messdaten zwischen beiden Messungen unterscheiden sich kaum. Am meisten ähnelt sich der Luftdruck, wobei zwischen Abbildung 3 und 18 nicht nur der Verlauf gleich ist, sondern sogar die absoluten Zahlenwerte. Dies kommt daher, dass der atmosphärische Luftdruck sehr stabil ist und nur bei einem starken Wetterumschwung leicht seinen Wert ändert. Da der Kanal nicht luftdicht verschlossen war, sondern mehrere Luftlöcher existierten, konnte sich der Druck ungehindert auch innerhalb des Experiments einstellen.
+Der abrupte Anstieg des Drucks passiert zeitgleich mit Einsetzen der Begasung, was logischerweise durch das zusätzlich einströmende Gas zu erklären ist. Während des Prozesses ist der Druck nicht konstant. Dies rührt von einer leichten Schwankung in der Flussrate des $CO_2$ und somit wahrscheinlich von den statistischen Änderungen der Ausflussgeschwindigkeit des Gases aus der Gasflasche und der dahinter geschalteten Druckminderung her.
+Fast genauso ähneln sich die Abbildungen 8 und 23 für die Windgeschwindigkeiten. Der Ventilator für die künstliche Erzeugung des Winds wurde durch einen Elektromotor gesteuert und kannte dabei nur zwei Zustände: Wind an / Wind aus. Die Geschwindigkeit war zwar einstellbar, doch wurde sie für die Versuchsdauer konstant gelassen. Zu sehen ist noch ein zeitlich verzögertes Erreichen der eingestellten Windgeschwindigkeit nach Einschalten des Ventilators.
+Zur Schonung des Materials wurde der Propeller nicht sofort auf die gewünschte Geschwindigkeit hochgefahren, sondern erhöhte langsam seine Drehfrequenz. Zudem ist zu beachten, dass der Ventilator unabhängig von der Windmessung war und somit die tatsächliche Windgeschwindigkeit gemessen wurde. Diese kann sich nicht instantan auf die Geschwindigkeit des Propellers anpassen, sondern die Bewegungsänderung muss sich erst nach und nach durch die Luftschichten ausbreiten. Somit registriert das Potentiometer auch die langsame Anpassung der Luftbewegung an den Ventilator.
+
+Bei Betrachtung der Temperaturen bietet es sich an, neben den Messungen in beiden Versuchsteilen auch die Wasser- und die Lufttemperatur zu vergleichen (Abbildungen 7 \& 22, 4 \& 19. Abgesehen von kleinen Unsicherheiten am Anfang der Abbildungen 19 \& 22 sieht man eindeutig, dass alle vier Kurven linear ansteigen.
+Der Anstieg der Lufttemperatur wird hauptsächlich durch die Abwärme des Ventilatormotors hervorgerufen, was in der kleinen Luftkammer bereits einen nicht unerheblicher Einfluss darstellt.
+Die Graphen der Wassertemperatur zeigen einen stufenartigen Anstieg, der durch die ungenaue Datenaufzeichnung der Messwerte zu erklären ist. Dadurch sind zwar feine Schwankungen der Wassertemperatur nicht zu sehen, aber der allgemeine Trend ist klar ersichtlich. Zu erklären ist dieses Wachstum mit dem aus der Hausleitung stammenden VE-Wasser. Es ist generell kühler als die Raumtemperatur und steht bei der Evasionsmessung im Kanal, wo es ins thermische Gleichgewicht mit der Lufttemperatur gelangen will, sprich sich erwärmt.
+
+Die gemessene Wasserhöhe schwankt am meisten in beiden Versuchsteilen (Abbildungen 6 \& 21), was auch durchaus so gewollt ist. Durch den eingestellten Wind werden innerhalb des Kanals Wellen erzeugt, die die Wassersäule teilweise massiv beeinflussen. Es wurden Wellen von etwa einem Zentimeter Höhe beobachtet, das entspricht bei einer Fülllhöhe von etwa sieben Zentimetern im Kanal bereits 15\%. Der überwiegende Abfall der Füllhöhe ist eigentlich unerwünscht und durch eine undichte Stelle im Versuchsaufbau zu begründen. Es entwich über den ganzen Messungszeitraum Flüssigkeit aus dem Kanal, was nicht wieder hinzugegeben wurde.
+
+Der Partialdruck von $CO_2$ im Wasser ist in den Abbildungen 5 \& 20 zu sehen. Er hängt direkt mit den am Experiment durchgeführten Eingriffen zusammen, die durch die horizontalen Balken eingezeichnet sind. So ist etwa der größte Anstieg gefolgt von dem exponentiellen Abfall die verzögerte Reaktion auf die Begasung des Wassers mit sofortiger Evasion des $CO_2$ in die Luft. Der Abfall ist dann so zu erklären, dass durch die sinkende Gaskonzentration im Wasser auch der abzugebende Teil an $CO_2$ an die Luft kleiner wird. Dadurch senkt sich der Partialdruck des Gases insgesamt.
+Der kleinere Hochpunkt zu Beginn beider Messreihen ist mit \cite{jaehne} Abb. 8
+zu verstehen. So ist die $CO_2$-Konzentration im VE-Wasser nie ganz null, da durch den Ionentauscher nur geladene Teilchen herausgefiltert werden können. Gelöst liegen aber $CO_2, CO_3^{2-} $ und $HCO_3^-$ vor, wovon $CO_2$ Moleküle nicht geladen sind und in Lösung bleiben.
+Dieser Anteil evasiert in die anfangs stehende Luft, der Partialdruck steigt. Nach dem Anschalten des Ventilators gelangt frische, gereinigte Luft in das Experiment und der $CO_2$ Anteil in Luft sinkt wieder auf den Anfangswert bis die Begasung wirksam wird.
+
+Die Leitfähigkeitsmessungen zeigen in Abb. 2 \& 17 erst nach der Evasionsmessungen starke Schwankungen, was besonders durch die Zugabe von $HCl$ und $NaOH$ bewirkt wird. Dadurch befinden sich plötzlich viel mehr Ionen im Kanal, die durch die Messmethode registriert werden. Die Zugaben erfolgten jeweils Schrittweise, was auch den gezackten Anstieg in den Plots erklärt.
+Der Abfall zwischen den beiden Peaks, der wieder in beiden Abbildungen vorkommt, zeigt die Neutralisation von Salzsäure mit Natronlauge, also die Bindung der Ionen zu ungeladenen Molekülen, ehe weiter Lauge hinzugegeben wird. Auch danach ist während der Messung eine konstante Menge Ionen vorhanden, was die Leitfähigkeit nicht ändert.
+
+Zu dem Versuchs- bzw. Auswertungsteil zur Bestimmung der Anfangskonzentration von $CO_2$ nach Beendigung der Begasung sollen an dieser Stelle noch einmal einige Dinge angemerkt werden. Zunächst wurde sowohl bei VE-, als auch bei Meermodellwasser die Menge an begastem $CO_2$ berechnet. Hierbei wurde der auf 21°C normierte Massenfluss verwendet, da wir nicht die exakte Temperatur des Gases, als es in den Oxygenator gelangt ist, bestimmen konnten. Auch wenn die Lufttemperatur mit ca. 23°C darüber lag, nehmen wir an, dass das Gas aus der Flasche etwas kühler war, weshalb die Normtemperatur gut passen sollte. Zur Abschätzung, ob sich auch das gesamte Gas im Wasser gelöst hat, erschien es sinnvoll zu bestimmen, wieviel Gas sich potentiell in dem Wasser lösen kann. Hierfür wurde die Löslichkeit für 21°C verwendet, was auch kein Problem darstellt, denn diese verändert sich über die Temperatur nicht so sehr, dass sie die Abschätzung signifikant beeinflussen würde. Außerdem ist zu erkennen, dass die Menge an begastem $CO_2$ deutlich unter der potentiell Lösbaren liegt. Daraus resultiert unsere Annahme, dass sämtliches Gas auch tatsächlich im Wasser gelöst wurde. Dies führt uns auf die beiden Anfangskonzentrationen von $c_{w0} = (2.11 \pm 0.02)\cdot 10^{-3} \frac{mol}{l}$ (VE-Wasser) und $c_{w0} = (1.82 \pm 0.02)\cdot 10^{-3} \frac{mol}{l}$ (Meermodellwasser). Die unterschiedlichen Werte ergeben sich vor allem aus den unterschiedlich langen Begasungszeiten. Es wurde von uns angenommen, dass die Zugabe von NaOH bei Meermodellwasser die Löslichkeit des Gases nicht signifikant ändert. Die Werte für die Anfangskonzentrationen erscheinen sinnvoll, denn sie fließen später in die Berechung der Transfergeschwindigkeiten mit ein und führen dort auf Werte, welche mit der Literatur übereinstimmen.
+>>>>>>> 1d3f4cf948b3aac440f125c17b080be51006dfde
 
 
 Im nächsten Schritt wurde mit der Leitfähigkeitsmethode nur die Transfergeschwindigkeit für VE-Wasser bestimmt. Die Methode ist auf Meermodellwasser aufgrund der zustätzlich anwesenden Ionen nicht anzuwenden. Die berechneten Transfergeschwindigkeiten von $k = (38.9 \pm 0.8)\, \frac{cm}{h}$ bzw. $k_{ges} = (36.4 \pm 0.9)\, \frac{cm}{h}$ liegen im Bereich der später nach der Indikatormethode bestimmten Werte und auch im Bereich der Literaturwerte (\cite{jaehne} Abb. 6). Die angegebenen Ungenauigkeiten ergeben sich aus den Fits, sind jedoch, vergleicht man das schrittweise mit dem Komplett-Fit Vorgehen, deutlich höher anzusetzen. Das schrittweise Vorgehen erscheint hier deutlich genauer zu sein, was an der Güte der Fits ersichtlich wird. Hier wird der Verlauf deutlich besser beschrieben. Auch unterschiedliche Windgeschwindigkeiten oder Höhen der Wassersäulen könnten für Differenzen gesorgt haben. Vor allem die Windgeschwindigkeiten haben sich gemessen an ihren Ungenauigkeiten stark geändert. Seltsam erscheint jedoch die geringere Transfergeschwindigkeit im zweiten Teil der schrittweisen Methode, auch wenn dort die Windgeschwindigkeit höher war. Umgekehrtes ist nämlich zu erwarten. Vielleicht hat sich in dieser Zeit aber auch ein Oberflächenfilm gebildet, der von uns nicht bemerkt wurde und so für eine Dämpfung gesorgt hat. Mit Daten können wir dies jedoch nicht belegen, da der $mss$ der Wellen nicht gemessen werden konnte, anhand dessen Abnahme dies begründet hätte werden können.
