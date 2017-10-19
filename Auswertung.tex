@@ -71,7 +71,7 @@ Besonders gilt hier die Annahme
 \end{equation}
  wodurch sich die Differentialgleichung weiter vereinfacht zu
 \begin{equation}
-	\dot{c_w} = - \frac{k}{h_{eff}} \cdot c_w
+	\dot{c}_w = - \frac{k}{h_{eff}} \cdot c_w
 \end{equation}
 Unter den gemachten Annahmen, ergibt sich bei einer Evasion, also dem Übergang von $CO_2$ aus dem Wasser in die Luft, ein Verhalten der Konzentration von $CO_2$ im Wasser, welches sich durch folgende Formel zeitlich beschreiben lässt:
 \begin{equation}\label{exponential}
@@ -89,7 +89,7 @@ Bei der Konzentration muss dabei beachtet werden, dass nicht alles abgegebene Ga
 Im betrachteten Boxmodell kann vereinfachend angenommen werden, dass die Gaskonzentration an allen Stellen eines Mediums gleich ist und somit auch die Transfergeschwindigkeit nicht lokal variiert werden muss.
 Diese Näherung wird auch durch den Versuchsaufbau begünstigt, indem etwa immer neue $CO_2$-arme Luft eingespült wird.
 
-\subsection{Messmethoden}
+\subsection{Messmethoden}\label{sub:Messmethoden}
 An dem verwendeten Versuchsaufbau werden viele relevanten Informationen gemessen, um ein möglichst genaues Bild von dem vorliegenden Aufbau zu erhalten und daraus das passenste Modell abzuleiten. Auch soll der genaue Einfluss der verschiedenen Großen auf die Transfergeschwindigkeit untersucht werden. 
 Zur Messung der Standardgrößen Druck, Temperatur und Wasserhöhe werden einfache Sensoren mit bekannter Technik verwendet. Dazu sind an dieser Stelle keine weiteren Erklärungen erforderlich.
 Von besonderem Interesse ist hier die Transfergeschwindigkeit, wozu die Kontentrationen von $CO_2$ in Wasser bekannt sein muss. Die Messung des Gases in Luft kann einfach vernachlässigt werden, da Gleichung \eqref{exponential} unter Annahme des Boxmodells mit \ref{Luftkonzentration} hergeleitet wurde.
@@ -105,7 +105,7 @@ In entionisiertem Wasser liegen neben $H_2O$ Molekülen auch geringe Mengen an H
 und für 
 \paragraph*{Meerwasser}
 \begin{equation}
-	[CO^2] \propto [H_3O^+]
+	[CO_2] \propto [H_3O^+]
 \end{equation}
 
 \subsubsection{Leitfähigkeit}
@@ -117,38 +117,44 @@ Damit kann man eine direkte Proportionalität zwischen der gemessenen Leitfähig
 Die Konzentration von Hydronium und Hydroxid Ionen wirkt sich auch auf den pH-Wert aus bzw. definiert diesen erst. 
 Durch den Einsatz von Indikatoren kann dieser Wert sichtbar gemacht und im Farbschema numerisch dargestellt werden. 
 Es werden je nach erwartetem pH-Wert unterschiedliche Indikator Farbstoffe verwendet, die jedoch immer gleich aufgebaut sind. Sie bestehen aus einem Wasserstoffion und dem Indikatorrest. Der Trick bei Indikatoren liegt in der unterschiedlichen Farbe zwischen dem Molekül mit $H^+$ Ion und dem Rest ohne dieses Ion. Durch die farbliche Mischung beider Farben ist je nach pH-Wert eine andere Farbe erkennbar. 
-Durch Spektrometrie des durchsichtigen Wassers kann der Wert also zu jeder Zeit gemessen werden und durch die Proportionalität zur Gasmenge kann mit Gleichung \ref{exponential} die Transfergeschwindigkeit ermittelt werden.
-
-
-\subsection{title}
-
-
-
-
-
-
-
+Durch Spektrometrie, also Frequenzbestimmung der Farbe des Wassers kann der Wert also zu jeder Zeit gemessen werden. Dabei wird ausgenutzt, das Wasser von Natur aus durchsichtig ist und die Farbmessung des Indikators nicht verfälscht. durch die Proportionalität zur Gasmenge kann mit Gleichung \ref{exponential} die Transfergeschwindigkeit ermittelt werden. Da dem Messgerät nicht im Vorhinein bekannt ist, welcher Indikator genau verwendet wird, geschweige denn, bei welcher Frequenz welche $CO_2$ Konzentration vorliegt, müssen Referenzspektren aufgenommen werden. Diese zwei Punkte werden dann linear verbunden, sodass alle Frequenzen daneben anhand der Zuordnung bestimmt werden können.
 
 
 \section{Versuchsanordnung}
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=70mm]{Versuchsaufbau}
-	\caption{Übersicht über den Versuchsaufbau (Abbildung 10 \cite{jaehne})}
+	\caption{Übersicht über den Versuchsaufbau (\cite{jaehne}: Abbildung 10)\label{fig:Versuchsaufbau}}
 \end{figure}
 
-Wie in der Übersicht zu sehen ist, wird der Versuch in einem ringförmigen Wind-Wellen-Kanal durchgeführt. Für beide Versuchsteile wird vollentsalztes Wasser verwendet. Hierbei handelt es sich um normales Haushaltswasser, was zusätzlich noch mit einem Ionentauscher aufbereitet wurde. Die Füllhöhe der Wasserrinne wird während des Versuchs mit einem Drucksensor über den hydrostatischen Druck gemessen. Der Luftraum wird ständig mit $CO_2$-freier Luft aus einem Reinstluftgenerator gespült. Dies führt zu einem leichten Unterdruck im Kanal, was in der Folge dazu führt, dass keine verunreinigte Umgebungsluft einströmen kann. Temperatur und $CO_2$-Konzentration werden mit handelsüblichen Sonden aufgenommen und vom PC ausgelesen. Für die Erzeugung des Windes stehen vier motorbetriebene Rotorblätter zur Verfügung. Diese kreisen im Luftraum. Über die Motorleistung kann die Windgeschwindigkeit reguliert werden. Der auch im Versuchsaufbau eingezeichnete Oxygenator dient dazu das Wasser mit Gas, in diesem Fall $CO_2$, anzureichern. Seine Funktionsweise ähnelt der einer Lunge. Anschließend wichtig zu nennen ist noch der Skimmer, welcher verwendet wird, um einen evtl. auftretenden Oberflächenfilm vom Wasser absaugen zu können.
+Wie in der Übersicht in Abbildung \ref{fig:Versuchsaufbau} zu sehen ist, wird der Versuch in einem ringförmigen Wind-Wellen-Kanal durchgeführt. Für beide Versuchsteile wird vollentsalztes Wasser verwendet. Hierbei handelt es sich um normales Haushaltswasser, was zusätzlich noch mit einem Ionentauscher aufbereitet wurde. Die Füllhöhe der Wasserrinne wird während des Versuchs mit einem Drucksensor über den hydrostatischen Druck gemessen. Der Luftraum wird ständig mit $CO_2$-armer Luft aus einem Reinstluftgenerator gespült. Dies führt zu einem leichten Unterdruck im Kanal, was in der Folge dazu führt, dass keine verunreinigte Umgebungsluft einströmen kann. Temperatur und $CO_2$-Konzentration werden mit handelsüblichen Sonden aufgenommen und vom PC ausgelesen. Für die Erzeugung des Windes stehen vier motorbetriebene Rotorblätter zur Verfügung. Diese kreisen im Luftraum. Über die Motorleistung kann die Windgeschwindigkeit reguliert werden. Der auch im Versuchsaufbau eingezeichnete Oxygenator dient dazu das Wasser mit Gas, in diesem Fall $CO_2$, anzureichern. Seine Funktionsweise ähnelt der einer Lunge. Anschließend wichtig zu nennen ist noch der Skimmer, welcher verwendet wird, um einen evtl. auftretenden Oberflächenfilm vom Wasser absaugen zu können.
 
-\section{Versuchsdurchf\"uhrung}
+\section{Versuchsdurchführung}
 
-Zunächst ist anzumerken, dass der Versuch grundsätzlich zwei mal durchgeführt wurde. Das jeweils verwendete Wasser war einmal VE-Wasser und im zweiten Teil Meermodellwasser. Zur Symolation des Meerwassers werden $2.5ml$ einer 1-molaren $NaOH$-Lösung in das gesammte im Wasserkanal befindliche Wasservolumen gegeben.
+Zunächst ist anzumerken, dass der Versuch grundsätzlich zwei mal durchgeführt wurde. Das jeweils verwendete Wasser war einmal VE-Wasser und im zweiten Teil Meermodellwasser. Zur Symolation des Meerwassers werden $2.5ml$ einer 1-molaren $NaOH$-Lösung in das gesammte im Wasserkanal befindliche Wasservolumen gegeben. Die hierbei gemessenen Unterschiede können dann direkt wieder in die Modellbildung mit einfließen und mit vorherigen Messungen aus ˜\cite{jaehne} verglichen werden. 
 Nachfolgend soll nur auf die wichtigsten Schritte während des Experiments eingegangen werden. Im Versuchsheft wurde handschriftlich Protokoll über die einzelnen Teile geführt:
-1. Prüfen der Leitfähigkeit des verwendeten Wassers, um sicherstellen zu können, dass unter einem bestimmten Schwellenwert. 2. Aufnahme von Lampenspektren 3. Für den Versuchsteil mit Meermodellwasser wird Natriumhydroxid dem Wasser hinzugegeben. 4. Begasung des Wassers mit $CO_2$ 5. Evasionsmessung 6. Alkalisches und saures Referenzspektrum aufnehmen, sowie Dunkelspektrum.
+% 1. Prüfen der Leitfähigkeit des verwendeten Wassers, um sicherstellen zu können, dass unter einem bestimmten Schwellenwert. 2. Aufnahme von Lampenspektren 3. Für den Versuchsteil mit Meermodellwasser wird Natriumhydroxid dem Wasser hinzugegeben. 4. Begasung des Wassers mit $CO_2$ 5. Evasionsmessung 6. Alkalisches und saures Referenzspektrum aufnehmen, sowie Dunkelspektrum.
+
+Im ersten Schritt nach Einleiten des reinen Wassers wurde die Leitfähigkeit festgestellt und sicher gestellt, dass zu Beginn die erwünschten Bedingungen herrschen. Hierbei war besonders darauf zu achten, dass Veränderungen von vorherigen Experimenten nicht mehr zum Tragen kommen, etwa durch Durchspülen der Apparatur mit VE-Wasser. Anschließend wurden alle zu messenden Versuchsparameter notiert, um verlässliche Startwerte zu haben und im Verlauf des Experiments einen Anhaltspunkt zu haben. 
+Ist bis zu diesem Punkt keine Unsicherheit aufgetreten, kann für den zweiten Teil des Experiments das Meermodellwasser hergestellt werden. Dazu wird einfach das bereits vorhandene Wasser mit Natronlauge versetzt. 
+Hier ist jedoch darauf zu achten, dass in etwa die gleiche Leitfähigkeit, wie von echtem Meerwasser erreicht wird, um die Realität möglichst gut abzubilden. Eine sehr geringe Menge (einige Milliliter) haben hier bereits ausgereicht, um die Leitfähigkeit des ganzen Wasservolumens von mehreren Litern maßgeblich zu verändern. 
+Während des Vorgangs wurden bereits in Zeitabständen von einigen Sekunden Messwerte aufgezeichnet, um die Diffusion der Lauge zu beobachten und besonders die benötigte Zugabemenge zu kontrollieren. Zur späteren Vermessung der Transfergeschwindigkeiten wird je nach Wasserzusammensetzung ein anderer Indikator hinzugegeben. Grund hierfür sind die verschiedenen zu erwartenden pH-Werte und somit die zwei Umschlagpunkte der Indikatoren (s. Abschnitt \ref{sub:Messmethoden}).
+Sobald die Anfangsbedingungen beider Versuchsteile ausreichend justiert und protokolliert wurden, kann mit der Begasung des Wassers fortgefahren werden. 
+Durch eine künstliche Lunge, dem sogenannten Oxygenator, wie er zur Beatmung von Komapatienten im Krankenhaus eingesetzt wird, lässt man das Wasser fließen und legt gleichzeitig einen Gasdruck an. 
+So kann sich das Gas im Wasser lösen und durch die durchströmende Gasmenge ist auch der Gasgehalt im Wasser bekannt. 
+Bevor das Wasser mit $CO_2$ gesättigt ist (die Zeitdauer lässt sich ausrechnen), wird der Gasfluss unterbrochen und das begaste Wasser wird in seinem jetzigen Zustand im Wind-Wellen-Kanal durch den Wind herum bewegt. Bereits während der Begasung hat das Wasser gleichzeitig einen kleinen Anteil des Kohlendioxids wieder an die Luft abgegeben, sodass bei Beendigung der Begasung kein stabiler Zustand erreicht wurde. So lässt sich eigentlich keine genaue Grenze zwischen Begasung und Evasion (also Luftabgabe vom Wasser in die Luft) festlegen. Um dennoch eine klare Auswertung der Messergebnisse zu ermöglichen, wird die anfängliche Evasion während der Begasung vernachlässigt und die Startkonzentration zu einem späteren Zeitpunkt direkt gemessen.
+Auch während der Gasabgabe an die Luft werden kontinuierlich alle wichtigen Parameter aufgezeichnet, sodass eine grafische Auswertung für das VE-Wasser (ab Abb. \ref{fig: VE-Wasser}) und das Meermodellwasser (ab Abb. \ref{fig: Meermodellwasser}) möglich wird. 
+Gemessen wurde die Konzentration des Gases, wie bereits in Abschnitt \ref{sub:Messmethoden} beschrieben, auf zwei verschiedene Methoden. Gleichzeitig zur ständigen Messung der Leitfähigkeit des Wassers, wurde mit einem Spektrometer die Frequenz und damit die Farbe des Wassers gemessen. 
+Damit nach der Versuchsdurchführung automatisch aus dem gemessenen Frequenzspektrum die richtige Gaskonzentration bestimmt werden kann, müssen Referenzwerte der Indikatoren im verwendeten Wasser aufgezeichnet werden. Wir nehmen dazu an, dass die Farbänderung des Indikators linear proportional zur Änderung des pH-Werts erfolgt. Auch die Güte dieser Annahme wird im späteren Teil \ref{sec:Diskussion} noch näher diskutiert. 
+Für die Referenzen muss einmal der alkalische und einmal der saure Grenzbereich im Spektrum des Indikators erreicht werden. Dazu wurde dem Wasser einmal Salzsäure injiziert, bis sich der Leitwert nicht mehr ändert. So weiß man, dass eine Sättigung des Wassers mit Indikatorionen erreicht wurde. Anschließend wird dieses Vorgehen für das alkalische Grenze durchgeführt. Hier muss beachtet werden, dass mehr Lauge zugegeben werden muss, als es vorher bei der Säure der Fall war. Ein Großteil der Lauge wird zum Neutralisieren der sauren Lösung verwendet wird und erst nach weiterer Zugabe wird ein basischer pH-Wert erericht. Um nun auch den konstanten Lichthintergrund zu beachten, wird dieser ebenfalls gemessen, indem das Spektrometer eine Dunkelmessung durchführt. Dies geschieht bei abgeschaltetem Licht in der Messkammer, um die externen Fehlerquellen zu messen und wird anschließend von allen anderen gemessenen Spektren abgezogen. 
+Nach Beendigung der Messungen wird das benutze Wasser aus der Apparatur abgelassen und der Wind-Wellen-Kanal mit reinem VE-Wasser für das nächste Experiment nachgespült.
+
+
 
 \section{Auswertung/Ergebnisse}
 \subsection{VE-Wasser}
-\subsubsection{Zeitliche Verl\"aufe der Messdaten}
+\subsubsection{Zeitliche Verläufe der Messdaten}
 
 \begin{figure}[H]
 	\centering
@@ -156,7 +162,7 @@ Nachfolgend soll nur auf die wichtigsten Schritte während des Experiments einge
 	\parbox{82.5mm}{
 		\centering
 		\includegraphics[width=82.5mm]{VE-Wasser/Leitfaehigkeit}
-		\caption{Leitf\"ahigkeit}
+		\caption{Leitf\"ahigkeit \label{fig: VE-Wasser}}
 	}
 	\hfill% fuegt Platz ein, das rueckt die beiden Bilder an den Rand
 	\parbox{82.5mm}{
@@ -417,7 +423,7 @@ Zur besseren Bewertung der Ergebnisse wurden noch die Mittelwerte und Standardab
 	\parbox{82.5mm}{
 		\centering
 		\includegraphics[width=82.5mm]{Meerwasser/Leitfaehigkeit}
-		\caption{Leitf\"ahigkeit}
+		\caption{Leitf\"ahigkeit \label{fig: Meermodellwasser}}
 	}
 	\hfill% fuegt Platz ein, das rueckt die beiden Bilder an den Rand
 	\parbox{82.5mm}{
@@ -588,7 +594,7 @@ Zur besseren Bewertung der Ergebnisse wurden noch die Mittelwerte und Standardab
 	\item Wassersäule $h_w[mm] = 77.6 \pm 1.2 $
 \end{itemize}
 
-\section{Diskussion}
+\section{Diskussion}\label{sec:Diskussion}
 
 % Zeitliche Verläufe der Messdaten
 In diesem Versuch sollen vorrangig die Auswirkungen der verschiedenen Umwelteinflüsse auf den Gasaustausch zwischen Ozean und Atmosphäre untersucht werden. In dem für dieses Experiment verwendeten Wind-Wellen-Kanal wurde besonders die Wasserzusammensetzung betrachtet. Andere zu beobachtende Parameter, wie die Windgeschwindigkeit, der Oberflächenfilm oder auch die Wasserhöhe konnten nahezu konstant gehalten werden (Abbildungen 2-8, 17-23).
